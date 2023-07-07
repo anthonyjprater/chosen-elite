@@ -17,5 +17,5 @@ import MainHeader from './components/headers/MainHeader.vue'
 </template>
 
 <style scoped>
-
+  
 </style>

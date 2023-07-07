@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <header>
+    <header class="header">
         <a href="#">
           <img src="/elite-logo.svg" class="logo" alt=""/>
           <span class="sr-only">Go to Team Chosen Elite Home Page</span>
@@ -52,13 +52,17 @@
 
 /* HEADER STYLES */
 header {
+  grid-area: header;
   display: flex;
   justify-content: space-between;
+  background-color: var(--grey);
 }
 
 .logo {
-  width: 4em;
-  /* padding: 2px; */
+  width: 3em;
+  height: 3em;
+  padding: 1px 5px;
+  margin: 0 0 0 1ch;
   will-change: filter;
   transition: filter 300ms;
 }
