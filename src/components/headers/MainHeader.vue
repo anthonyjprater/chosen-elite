@@ -9,6 +9,7 @@
           <span class="sr-only">Go to Team Chosen Elite Home Page</span>
         </a>
         <nav id="navigation" class="main-nav">
+          <a href="#main" class="skip-link">Skip navigation</a>
             <button class="menu-trigger">
             <svg class="icon" viewBox="0 0 30 30">
             <path
@@ -20,7 +21,7 @@
             </button>
             <ul>
                 <li class="has-sub-menu">
-                  <button class="menu-trigger">Hustle Team</button>
+                  <button class="sub-menu-trigger">Hustle Team</button>
                   <ul class="sub-menu">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Coaches</a></li>
@@ -29,7 +30,7 @@
                   <a href="#">Hustle Team</a>
                 </li>
                 <li class="has-sub-menu">
-                  <button class="menu-trigger">Training Programs</button>
+                  <button class="sub-menu-trigger">Training Programs</button>
                   <ul class="sub-menu">
                     <li><a href="#">Children</a></li>
                     <li><a href="#">Amateurs</a></li>
@@ -95,6 +96,28 @@ button:active {
   border-radius: 0;
 }
 
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.skip-link:focus {
+  clip: unset;
+  clip-path: unset;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background: white;
+  z-index: 1;
+}
+
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -120,7 +143,8 @@ button:active {
   width: fit-content;
 }
 
-.main-nav ul {
+.main-nav ul,
+.main-nav ul ul {
   position: absolute;
   max-width: fit-content;
   list-style-type: none;
@@ -128,8 +152,12 @@ button:active {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  left: -50px;
   z-index: 1;
+  color: var(--white);
 }
+
+.main-nav ul ul {}
 
 .main-nav li {
   position: relative;
@@ -141,9 +169,13 @@ button:active {
   margin-block-end: 1ch;
   margin-inline-end: 1ch;
   padding: 0.3rem 0.3rem;
-  color: black;
+  color: inherit;
   text-decoration: none;
   background: var(--gray);
+}
+
+.main-nav ul.sub-menu {
+  left: -100px;
 }
 
 .main-nav a:hover,
@@ -155,8 +187,23 @@ button:active {
   border-color: black;
 }
 
-.main-nav ul.hide {
+.main-nav ul ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.main-nav ul.hide,
+.main-nav ul ul.hide {
   display: none;
+}
+
+.sub::after {
+  display: inline-block;
+  margin-inline-start: 0.5rem;
+  content: ">";
+  transform: rotate(90deg);
 }
 
 </style>
