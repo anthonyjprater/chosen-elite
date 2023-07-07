@@ -5,24 +5,28 @@
 <template>
     <header>
         <a href="#">
-          
+          <img src="/elite-logo.svg" class="logo" alt=""/>
           <span class="sr-only">Go to Team Chosen Elite Home Page</span>
         </a>
         <nav id="navigation" class="main-nav">
             <button class="menu-trigger">
-            <svg class="icon" viewBox="0 0 44 32">
+            <svg class="icon" viewBox="0 0 30 30">
             <path
-                    d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"
+                    d="M0 6h28v3h-28v-3zM0 14h28v3h-28v-3zM0 22h28v3h-28v-3z"
             ></path>
-            <path d="M31 14l6 6 6-6z"></path>
+            <!-- <path d="M31 14l6 6 6-6z"></path> -->
             </svg>
             <span class="sr-only">Main menu</span>
             </button>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="/news">News</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="#">Hustle Team</a></li>
+                <li><a href="/news">Training Programs</a></li>
+                <li><a href="/about">References</a></li>
+                <li><a href="/contact">Gallery</a></li>
+                <li><a href="/contact">News</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li><a href="/contact">Training Grounds</a></li>
+                <li><a href="/contact">Apply</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +37,18 @@
 /* HEADER STYLES */
 header {
   display: flex;
-  color: black;
+  justify-content: space-between;
 }
 
+.logo {
+  width: 4em;
+  /* padding: 2px; */
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
 
 /* NAV STYLES */
 button {
@@ -75,12 +88,11 @@ button:active {
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 2rem;
+  height: 2em;
   stroke-width: 0;
   stroke: currentColor;
-  fill: currentColor;
-  width: 1.375em;
+  fill: var(--white);
 }
 
 .main-nav {
@@ -108,11 +120,10 @@ button:active {
   display: block;
   margin-block-end: 1ch;
   margin-inline-end: 1ch;
-  padding: 0.3rem 0.5rem;
-  border: 3px solid black;
+  padding: 0.3rem 0.3rem;
   color: black;
   text-decoration: none;
-  background: white;
+  background: var(--gray);
 }
 
 .main-nav a:hover,
