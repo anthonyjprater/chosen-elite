@@ -19,8 +19,24 @@
             <span class="sr-only">Main menu</span>
             </button>
             <ul>
-                <li><a href="#">Hustle Team</a></li>
-                <li><a href="/news">Training Programs</a></li>
+                <li class="has-sub-menu">
+                  <button class="menu-trigger">Hustle Team</button>
+                  <ul class="sub-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Coaches</a></li>
+                    <li><a href="#">Merch</a></li>
+                  </ul>
+                  <a href="#">Hustle Team</a>
+                </li>
+                <li class="has-sub-menu">
+                  <button class="menu-trigger">Training Programs</button>
+                  <ul class="sub-menu">
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Amateurs</a></li>
+                    <li><a href="#">Advanced</a></li>
+                  </ul>
+                  <a href="#">Hustle Team</a>
+                </li>
                 <li><a href="/about">References</a></li>
                 <li><a href="/contact">Gallery</a></li>
                 <li><a href="/contact">News</a></li>

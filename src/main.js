@@ -16,17 +16,17 @@ const toggleMenu = (status) => {
   if (status == "false") {
     menu.classList.remove("hide");
     trigger.setAttribute("aria-expanded", "true");
-    trigger.setAttribute("aria-label", "Close news menu.");
+    trigger.setAttribute("aria-label", "Close submenu.");
   } else {
     menu.classList.add("hide");
     trigger.setAttribute("aria-expanded", "false");
-    trigger.setAttribute("aria-label", "Open news menu.");
+    trigger.setAttribute("aria-label", "Open submenu.");
   }
 };
 
 // Set initial state for the button.
 trigger.setAttribute("aria-expanded", "false");
-trigger.setAttribute("aria-label", "Open news menu.");
+trigger.setAttribute("aria-label", "Open submenu.");
 
 // Listen for button click
 trigger.addEventListener("click", function () {
