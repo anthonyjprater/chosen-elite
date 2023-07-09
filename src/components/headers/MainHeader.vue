@@ -37,11 +37,11 @@
                   </ul>
                 </li>
                 <li><a href="/about">References</a></li>
-                <li><a href="/contact">Gallery</a></li>
-                <li><a href="/contact">News</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/news">News</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/contact">Training Grounds</a></li>
-                <li><a href="/contact">Apply</a></li>
+                <li><a href="/training_grounds">Training Grounds</a></li>
+                <li><a class="apply" href="/apply">Apply</a></li>
             </ul>
         </nav>
     </header>
@@ -211,6 +211,7 @@ header {
 .main-nav ul {
   position: relative;
   flex-direction: row;
+  padding: 0.5rem 0 0 0;
 }
 
 .main-nav ul ul {
@@ -240,6 +241,14 @@ header {
 
 .main-nav > ul {
   gap: 1rem;
+}
+
+.apply {
+  width: 4em;
+  background-color: var(--green);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  border-radius: 15px;
 }
 
 }

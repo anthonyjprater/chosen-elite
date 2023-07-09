@@ -1,6 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 import MainHeader from './components/headers/MainHeader.vue'
+import MainFooter from './components/footers/MainFooter.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import MainHeader from './components/headers/MainHeader.vue'
     </a>
   </div> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <MainFooter />
 </template>
 
 <style scoped>
