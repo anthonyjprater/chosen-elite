@@ -27,7 +27,6 @@
                     <li><a href="#">Coaches</a></li>
                     <li><a href="#">Merch</a></li>
                   </ul>
-                  <a href="#">Hustle Team</a>
                 </li>
                 <li class="has-sub-menu">
                   <button class="sub-menu-trigger">Training Programs</button>
@@ -36,7 +35,6 @@
                     <li><a href="#">Amateurs</a></li>
                     <li><a href="#">Advanced</a></li>
                   </ul>
-                  <a href="#">Hustle Team</a>
                 </li>
                 <li><a href="/about">References</a></li>
                 <li><a href="/contact">Gallery</a></li>
@@ -155,55 +153,95 @@ button:active {
   left: -50px;
   z-index: 1;
   color: var(--white);
+  background: var(--grey);
 }
-
-.main-nav ul ul {}
 
 .main-nav li {
   position: relative;
 }
 
 .main-nav a,
-.menu-trigger {
+.menu-trigger,
+.sub-menu-trigger {
   display: block;
   margin-block-end: 1ch;
   margin-inline-end: 1ch;
   padding: 0.3rem 0.3rem;
   color: inherit;
   text-decoration: none;
-  background: var(--gray);
 }
 
 .main-nav ul.sub-menu {
   left: -100px;
+  top: 0;
 }
 
 .main-nav a:hover,
 .main-nav a:focus,
 .menu-trigger:hover,
-.menu-trigger:focus {
-  background: black;
+.menu-trigger:focus,
+.has-sub-menu:hover,
+.has-sub-menu:focus {
   color: white;
   border-color: black;
 }
-
-.main-nav ul ul {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-}
-
 .main-nav ul.hide,
 .main-nav ul ul.hide {
   display: none;
 }
 
+@media(min-width: 768px) {
+
+header {
+  gap: 3rem;
+  font-size: 1rem;
+}
+
 .sub::after {
   display: inline-block;
   margin-inline-start: 0.5rem;
-  content: ">";
+  content: "▶";
   transform: rotate(90deg);
+}
+
+.menu-trigger {
+  display: none;
+}
+
+.main-nav ul {
+  position: relative;
+  flex-direction: row;
+}
+
+.main-nav ul ul {
+  position: relative;
+  max-width: initial;
+  left: 0;
+}
+
+.main-nav ul.sub-menu {
+  left: 0;
+}
+.sub-menu-trigger {
+  line-height: 1.5;
+}
+
+.sub-menu {
+  background: var(--grey);
+}
+
+.main-nav > ul li:hover:not(.open) {
+  border-bottom: 3px solid var(--green);
+}
+
+.main-nav {
+  align-self: start;
+}
+
+.main-nav > ul {
+  gap: 1rem;
+}
+
 }
 
 </style>
