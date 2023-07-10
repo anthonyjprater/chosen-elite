@@ -88,7 +88,7 @@ button:focus-visible {
   padding: 0;
   text-align: center;
   display: grid;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 75px auto fr;
   grid-auto-rows: auto;
   grid-template-areas:
     "header header header"

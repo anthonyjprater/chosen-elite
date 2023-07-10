@@ -37,11 +37,11 @@
                   </ul>
                 </li>
                 <li><a href="/about">References</a></li>
-                <li><a href="/contact">Gallery</a></li>
-                <li><a href="/contact">News</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/news">News</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/contact">Training Grounds</a></li>
-                <li><a href="/contact">Apply</a></li>
+                <li><a href="/training_grounds">Training Grounds</a></li>
+                <li><a class="apply" href="/apply">Apply</a></li>
             </ul>
         </nav>
     </header>
@@ -153,55 +153,104 @@ button:active {
   left: -50px;
   z-index: 1;
   color: var(--white);
+  background: var(--grey);
 }
-
-.main-nav ul ul {}
 
 .main-nav li {
   position: relative;
 }
 
 .main-nav a,
-.menu-trigger {
+.menu-trigger,
+.sub-menu-trigger {
   display: block;
   margin-block-end: 1ch;
   margin-inline-end: 1ch;
   padding: 0.3rem 0.3rem;
   color: inherit;
   text-decoration: none;
-  background: var(--gray);
 }
 
 .main-nav ul.sub-menu {
   left: -100px;
+  top: 0;
 }
 
 .main-nav a:hover,
 .main-nav a:focus,
 .menu-trigger:hover,
-.menu-trigger:focus {
-  background: black;
+.menu-trigger:focus,
+.has-sub-menu:hover,
+.has-sub-menu:focus {
   color: white;
   border-color: black;
 }
-
-.main-nav ul ul {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-}
-
 .main-nav ul.hide,
 .main-nav ul ul.hide {
   display: none;
 }
 
+@media(min-width: 768px) {
+
+header {
+  gap: 3rem;
+  font-size: 1rem;
+}
+
 .sub::after {
   display: inline-block;
   margin-inline-start: 0.5rem;
-  content: ">";
+  content: "▶";
   transform: rotate(90deg);
+}
+
+.menu-trigger {
+  display: none;
+}
+
+.main-nav ul {
+  position: relative;
+  flex-direction: row;
+  padding: 0.5rem 0 0 0;
+}
+
+.main-nav ul ul {
+  position: relative;
+  max-width: initial;
+  left: 0;
+}
+
+.main-nav ul.sub-menu {
+  left: 0;
+}
+.sub-menu-trigger {
+  line-height: 1.5;
+}
+
+.sub-menu {
+  background: var(--grey);
+}
+
+.main-nav > ul li:hover:not(.open) {
+  border-bottom: 3px solid var(--green);
+}
+
+.main-nav {
+  align-self: start;
+}
+
+.main-nav > ul {
+  gap: 1rem;
+}
+
+.apply {
+  width: 4em;
+  background-color: var(--green);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  border-radius: 15px;
+}
+
 }
 
 </style>
