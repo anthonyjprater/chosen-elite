@@ -124,3 +124,8 @@ document.addEventListener('click', (e) => {
     toggleSubMenu(currentSubMenu, true)
   }
 })
+
+// FOOTER NAVIGATION
+const footerMenus = document.querySelectorAll('.footer-nav ul ul')
+// Find all sub-menu trigger buttons. */
+const footerMenuTriggers = document.querySelectorAll('.footer-nav-trigger')
