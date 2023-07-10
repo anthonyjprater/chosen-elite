@@ -36,7 +36,7 @@
                     <li><a href="#">Advanced</a></li>
                   </ul>
                 </li>
-                <li><a href="/about">References</a></li>
+                <li><a href="/references">References</a></li>
                 <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/news">News</a></li>
                 <li><a href="/contact">Contact</a></li>
@@ -158,6 +158,10 @@ button:active {
 
 .main-nav li {
   position: relative;
+}
+
+.main-nav ul ul a {
+  margin-inline-end: 0.95rem;
 }
 
 .main-nav a,
