@@ -27,7 +27,6 @@
                     <li><a href="#">Coaches</a></li>
                     <li><a href="#">Merch</a></li>
                   </ul>
-                  <a href="#">Hustle Team</a>
                 </li>
                 <li class="has-sub-menu">
                   <button class="sub-menu-trigger">Training Programs</button>
@@ -36,7 +35,6 @@
                     <li><a href="#">Amateurs</a></li>
                     <li><a href="#">Advanced</a></li>
                   </ul>
-                  <a href="#">Hustle Team</a>
                 </li>
                 <li><a href="/about">References</a></li>
                 <li><a href="/contact">Gallery</a></li>
