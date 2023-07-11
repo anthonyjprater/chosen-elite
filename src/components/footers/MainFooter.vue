@@ -29,6 +29,7 @@
                 </li>
                 <li>
                   <button class="footer-nav-trigger">Training Programs</button>
+                  
                   <ul class="footer-sub-menu">
                       <li><a href="/about">About Us</a></li>
                       <li><a href="/coaches">Coaches</a></li>
@@ -52,6 +53,51 @@ footer {
 footer .logo {
     width: 7em;
     height: 7em;
+}
+
+.footer-nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav > ul li {
+  width: 90%;
+}
+
+button.footer-nav-trigger {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 0.5em;
+  color: var(--white);
+  background: transparent;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  border-radius: 0;
+}
+.footer-nav-trigger:hover,
+.footer-nav-trigger:focus {
+    background: var(--green);
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+.footer-nav-trigger:focus {
+    outline: 1px solid rgba(255,255,255,0.7);
+    outline-offset: -4px;
+}
+
+.footer-nav-trigger:active {
+    transform: scale(0.99);
+}
+.footer-nav-trigger::after {
+  display: inline-block;
+  margin-inline-start: 0.5rem;
+  color: var(--white);
+  font-size: 0.75em;
+  content: "▶";
+  transform: rotate(90deg);
 }
 
 </style>
