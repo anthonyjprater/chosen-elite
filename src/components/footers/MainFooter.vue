@@ -80,6 +80,7 @@ button.footer-nav-trigger {
 .footer-nav-trigger:focus {
     background: var(--green);
     cursor: pointer;
+    border-color: none;
     /* opacity: 0.3; */
 }
 
