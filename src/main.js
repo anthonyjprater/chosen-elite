@@ -167,21 +167,21 @@ footerMenuTriggers.forEach((trigger) => {
   trigger.addEventListener('click', function () {
     const parent = trigger.parentElement
     const status = trigger.getAttribute('aria-expanded')
-    toggleSubMenu(parent, status)
+    toggleFooterSubMenu(parent, status)
   })
 })
 
 // Close sub-menus when user tabs outside menu.
-document.addEventListener('focusin', (e) => {
-  let currentSubMenu = document.querySelector('.open')
-  if (
-    currentSubMenu &&
-    e.target.closest('.has-sub-menu') !== currentSubMenu &&
-    window.innerWidth < 768
-  ) {
-    toggleSubMenu(currentSubMenu, true)
-  }
-})
+// document.addEventListener('focusin', (e) => {
+//   let currentSubMenu = document.querySelector('.open')
+//   if (
+//     currentSubMenu &&
+//     e.target.closest('.has-sub-menu') !== currentSubMenu &&
+//     window.innerWidth < 768
+//   ) {
+//     toggleFooterSubMenu(currentSubMenu, true)
+//   }
+// })
 
 // Close sub-menus when user clicks outside menu.
 document.addEventListener('click', (e) => {

@@ -8,7 +8,7 @@
         <a href="#" data-v-ff36cf16=""><img src="/elite-logo.svg" class="logo" alt="" data-v-ff36cf16=""><span class="sr-only" data-v-ff36cf16="">Go to Team Chosen Elite Home Page</span></a>
         <div class="footer-nav">
             <ul>
-                <li>
+                <li class="has-sub-menu">
                   <button class="footer-nav-trigger">General</button>
                   <ul class="footer-sub-menu">
                     <li><a href="/references">References</a></li>
@@ -18,7 +18,7 @@
                     <li><a href="/training_grounds">Training Grounds</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="has-sub-menu">
                   <button class="footer-nav-trigger">Training Programs</button>
                   <ul class="footer-sub-menu">
                     <li><a href="#">Children</a></li>
@@ -27,7 +27,7 @@
                     <li><a href="#">Apply</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="has-sub-menu">
                   <button class="footer-nav-trigger">Training Programs</button>
                   
                   <ul class="footer-sub-menu">
@@ -60,6 +60,19 @@ footer .logo {
   flex-direction: column;
   align-items: center;
 }
+
+.footer-nav ul ul.hide {
+  display: none;
+}
+
+
+.sub::after {
+  display: inline-block;
+  margin-inline-start: 0.5rem;
+  content: "▶";
+  transform: rotate(90deg);
+}
+
 
 .footer-nav > ul li {
   width: 90%;
