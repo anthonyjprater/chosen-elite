@@ -19,7 +19,7 @@
                   </ul>
                 </li>
                 <li class="has-sub-menu">
-                  <button class="footer-nav-trigger">Training Programs</button>
+                  <button class="footer-nav-trigger">Programs</button>
                   <ul class="footer-sub-menu">
                     <li><a href="#">Children</a></li>
                     <li><a href="#">Amateurs</a></li>
@@ -28,7 +28,7 @@
                   </ul>
                 </li>
                 <li class="has-sub-menu">
-                  <button class="footer-nav-trigger">Training Programs</button>
+                  <button class="footer-nav-trigger">Academy</button>
                   
                   <ul class="footer-sub-menu">
                       <li><a href="/about">About Us</a></li>
@@ -38,6 +38,15 @@
                 </li>
             </ul>
         </div>
+        <address>
+          <div><i class="fa-solid fa-phone"></i><a href="mailto:nash.pluto@pmail.verse">basketball@gmail.com</a></div>
+          <div><i class="fa-regular fa-envelope"></i><a href="tel:+15555555555">(311) 555-2368</a></div>
+          <div class="social-links">
+            <i class="fa-sharp fa-solid fa-paper-plane"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </address>
     </footer>
 </template>
 
@@ -59,6 +68,7 @@ footer .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style-type: none;
 }
 
 .footer-nav ul ul.hide {
@@ -76,6 +86,7 @@ footer .logo {
 
 .footer-nav > ul li {
   width: 90%;
+  list-style-type: none;
 }
 
 button.footer-nav-trigger {
@@ -84,6 +95,7 @@ button.footer-nav-trigger {
   width: 100%;
   padding: 1em 0.5em;
   color: var(--white);
+  text-transform: uppercase;
   background: transparent;
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
@@ -91,10 +103,12 @@ button.footer-nav-trigger {
 }
 .footer-nav-trigger:hover,
 .footer-nav-trigger:focus {
-    background: var(--green);
+    background: rgba(60, 60, 60, 1);
+    color: var(--green);
     cursor: pointer;
     border-color: none;
     /* opacity: 0.3; */
+    outline: none;
 }
 
 .footer-nav-trigger:focus {
@@ -112,6 +126,30 @@ button.footer-nav-trigger {
   font-size: 0.75em;
   content: "▶";
   transform: rotate(90deg);
+}
+
+.footer-sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+footer address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+address i {
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+  color: var(--grey);
+  background: var(--green);
 }
 
 </style>
