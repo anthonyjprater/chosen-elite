@@ -39,12 +39,20 @@
             </ul>
         </div>
         <address>
-          <div><i class="fa-solid fa-phone"></i><a href="mailto:nash.pluto@pmail.verse">basketball@gmail.com</a></div>
-          <div><i class="fa-regular fa-envelope"></i><a href="tel:+15555555555">(311) 555-2368</a></div>
+          <div>
+            <a href="mailto:nash.pluto@pmail.verse"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:nash.pluto@pmail.verse">basketball@gmail.com</a></div>
+          <div>
+            <a href="tel:+15555555555"><i class="fa-regular fa-envelope"></i></a>
+            <a href="tel:+15555555555">(311) 555-2368</a></div>
           <div class="social-links">
             <i class="fa-sharp fa-solid fa-paper-plane"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="copyright">
+            <small>Copyright &copy; Hustle Basketball Academy</small>
+            <small>All rights reserved</small>
           </div>
         </address>
     </footer>
@@ -56,12 +64,17 @@ footer {
   grid-area: footer;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--grey);
 }
 
 footer .logo {
     width: 7em;
     height: 7em;
+}
+
+.footer-nav {
+  width: 90%;
 }
 
 .footer-nav > ul {
@@ -85,7 +98,7 @@ footer .logo {
 
 
 .footer-nav > ul li {
-  width: 90%;
+  width: 100%;
   list-style-type: none;
 }
 
@@ -139,9 +152,13 @@ button.footer-nav-trigger {
 footer address {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 75%;
   gap: 0.75rem;
   padding: 1.5rem 0;
   font-size: 0.9rem;
+
+  border: 1px solid red;
 }
 
 address i {
@@ -150,6 +167,11 @@ address i {
   margin: 0 5px 0 0;
   color: var(--grey);
   background: var(--green);
+}
+
+address .copyright {
+  display: flex;
+  flex-direction: column;
 }
 
 </style>
