@@ -91,10 +91,9 @@ button.footer-nav-trigger {
 }
 .footer-nav-trigger:hover,
 .footer-nav-trigger:focus {
-    background: var(--green);
+    opacity: 0.8;
     cursor: pointer;
     border-color: none;
-    /* opacity: 0.3; */
 }
 
 .footer-nav-trigger:focus {
