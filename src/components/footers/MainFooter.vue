@@ -39,16 +39,18 @@
             </ul>
         </div>
         <address>
-          <div>
-            <a href="mailto:nash.pluto@pmail.verse"><i class="fa-solid fa-phone"></i></a>
-            <a href="mailto:nash.pluto@pmail.verse">basketball@gmail.com</a></div>
-          <div>
-            <a href="tel:+15555555555"><i class="fa-regular fa-envelope"></i></a>
-            <a href="tel:+15555555555">(311) 555-2368</a></div>
-          <div class="social-links">
-            <i class="fa-sharp fa-solid fa-paper-plane"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook-f"></i>
+          <div class="footer-links">
+            <div>
+              <a href="mailto:nash.pluto@pmail.verse"><i class="fa-solid fa-phone"></i></a>
+              <a href="mailto:nash.pluto@pmail.verse">basketball@gmail.com</a></div>
+            <div>
+              <a href="tel:+15555555555"><i class="fa-regular fa-envelope"></i></a>
+              <a href="tel:+15555555555">(311) 555-2368</a></div>
+            <div class="social-links">
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
           </div>
           <div class="copyright">
             <small>Copyright &copy; Hustle Basketball Academy</small>
@@ -75,6 +77,7 @@ footer .logo {
 
 .footer-nav {
   width: 90%;
+  padding: 1rem 0;
 }
 
 .footer-nav > ul {
@@ -154,11 +157,16 @@ footer address {
   flex-direction: column;
   align-items: center;
   width: 75%;
-  gap: 0.75rem;
-  padding: 1.5rem 0;
+  gap: 2rem;
+  padding: 2rem 0;
   font-size: 0.9rem;
+}
 
-  border: 1px solid red;
+address .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
 }
 
 address i {
@@ -169,9 +177,49 @@ address i {
   background: var(--green);
 }
 
+address .social-links {
+  align-self: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
 address .copyright {
   display: flex;
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  
+  footer {
+
+
+    flex-flow: column wrap;
+    max-height: 400px;
+    align-items: baseline;
+  }
+
+  footer address {
+    width: 30%;
+    align-items: baseline;
+    padding: 1rem;
+  }
+  footer .footer-nav {
+    order: 1;
+    flex-grow: 2;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2rem;
+    width: 70%;
+  }
+
+  .footer-nav > ul {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  button.footer-nav-trigger {
+    border: none;
+  }
+}
 </style>
