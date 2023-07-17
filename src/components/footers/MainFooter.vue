@@ -19,7 +19,7 @@
                   </ul>
                 </li>
                 <li class="has-sub-menu">
-                  <button class="footer-nav-trigger">Training Programs</button>
+                  <button class="footer-nav-trigger">Programs</button>
                   <ul class="footer-sub-menu">
                     <li><a href="#">Children</a></li>
                     <li><a href="#">Amateurs</a></li>
@@ -28,7 +28,7 @@
                   </ul>
                 </li>
                 <li class="has-sub-menu">
-                  <button class="footer-nav-trigger">Training Programs</button>
+                  <button class="footer-nav-trigger">Academy</button>
                   
                   <ul class="footer-sub-menu">
                       <li><a href="/about">About Us</a></li>
@@ -38,6 +38,25 @@
                 </li>
             </ul>
         </div>
+        <address>
+          <div class="footer-links">
+            <div>
+              <a href="mailto:nash.pluto@pmail.verse"><i class="fa-solid fa-phone"></i></a>
+              <a href="mailto:nash.pluto@pmail.verse">basketball@gmail.com</a></div>
+            <div>
+              <a href="tel:+15555555555"><i class="fa-regular fa-envelope"></i></a>
+              <a href="tel:+15555555555">(311) 555-2368</a></div>
+            <div class="social-links">
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+          <div class="copyright">
+            <small>Copyright &copy; Hustle Basketball Academy</small>
+            <small>All rights reserved</small>
+          </div>
+        </address>
     </footer>
 </template>
 
@@ -47,6 +66,7 @@ footer {
   grid-area: footer;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--grey);
 }
 
@@ -55,10 +75,16 @@ footer .logo {
     height: 7em;
 }
 
+.footer-nav {
+  width: 90%;
+  padding: 1rem 0;
+}
+
 .footer-nav > ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style-type: none;
 }
 
 .footer-nav ul ul.hide {
@@ -75,7 +101,8 @@ footer .logo {
 
 
 .footer-nav > ul li {
-  width: 90%;
+  width: 100%;
+  list-style-type: none;
 }
 
 button.footer-nav-trigger {
@@ -84,6 +111,7 @@ button.footer-nav-trigger {
   width: 100%;
   padding: 1em 0.5em;
   color: var(--white);
+  text-transform: uppercase;
   background: transparent;
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
@@ -91,7 +119,7 @@ button.footer-nav-trigger {
 }
 .footer-nav-trigger:hover,
 .footer-nav-trigger:focus {
-    opacity: 0.8;
+    background: var(--green);
     cursor: pointer;
     border-color: none;
 }
@@ -113,4 +141,82 @@ button.footer-nav-trigger {
   transform: rotate(90deg);
 }
 
+.footer-sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+footer address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  gap: 2rem;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+address .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+}
+
+address i {
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+  color: var(--grey);
+  background: var(--green);
+}
+
+address .social-links {
+  align-self: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+address .copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  
+  footer {
+
+
+    flex-flow: column wrap;
+    max-height: 400px;
+    align-items: baseline;
+  }
+
+  footer address {
+    width: 30%;
+    align-items: baseline;
+    padding: 1rem;
+  }
+  footer .footer-nav {
+    order: 1;
+    flex-grow: 2;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2rem;
+    width: 70%;
+  }
+
+  .footer-nav > ul {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  button.footer-nav-trigger {
+    border: none;
+  }
+}
 </style>
