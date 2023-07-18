@@ -8,6 +8,7 @@ createApp(App).mount('#app')
 const nav = document.querySelector('.main-nav')
 const trigger = document.querySelector('.menu-trigger')
 const menu = document.querySelector('.main-nav ul')
+const footerMenu = document.querySelectorAll('.footer-sub-menu')
 
 // Hide menu on open.
 menu.classList.add('hide')
@@ -194,3 +195,20 @@ document.addEventListener('click', (e) => {
     toggleFooterSubMenu(currentSubMenu, true)
   }
 })
+
+footerMenu.forEach(subMenu => {
+  if (window.innerWidth > 768) {
+    subMenu.classList.remove('hide')
+  }
+})
+
+function reportWindowSize() {
+  footerMenu.forEach(subMenu => {
+    // if (window.innerWidth > 768) {
+    //   subMenu.classList.remove('hide')
+    // }
+    window.innerWidth > 768 ? subMenu.classList.remove('.hide') : subMenu.classList.add('.hide')
+  })
+}
+
+window.onresize = reportWindowSize;

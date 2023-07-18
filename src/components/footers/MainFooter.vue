@@ -68,6 +68,8 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: var(--grey);
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 footer .logo {
@@ -183,13 +185,12 @@ address .social-links {
 address .copyright {
   display: flex;
   flex-direction: column;
+  color: var(--white);
 }
 
 @media (min-width: 768px) {
   
   footer {
-
-
     flex-flow: column wrap;
     max-height: 400px;
     align-items: baseline;
@@ -213,10 +214,38 @@ address .copyright {
   .footer-nav > ul {
     flex-direction: row;
     width: 100%;
+    align-items: baseline;
   }
 
   button.footer-nav-trigger {
     border: none;
+    padding: 1em 0;
+    color: var(--green);
   }
+
+  button.footer-nav-trigger::after {
+  display: none;
+  }
+
+  button.footer-nav-trigger:hover {
+    color: var(--white);
+    outline: none;
+    width:max-content;
+    border-radius: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  li.has-sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .footer-sub-menu {
+    text-align: left;
+  }
+
+  
 }
 </style>
