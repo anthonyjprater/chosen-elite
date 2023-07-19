@@ -196,18 +196,18 @@ document.addEventListener('click', (e) => {
   }
 })
 
-footerMenu.forEach(subMenu => {
-  if (window.innerWidth > 768) {
-    subMenu.classList.remove('hide')
-  }
-})
+// footerMenu.forEach(subMenu => {
+//   if (window.innerWidth > 768) {
+//     subMenu.classList.remove('hide')
+//   }
+// })
 
 function reportWindowSize() {
   footerMenu.forEach(subMenu => {
     // if (window.innerWidth > 768) {
     //   subMenu.classList.remove('hide')
     // }
-    window.innerWidth > 768 ? subMenu.classList.remove('.hide') : subMenu.classList.add('.hide')
+    window.innerWidth > 768 ? subMenu.style.backgroundColor = "red" : subMenu.classList.add('.hide')
   })
 }
 
