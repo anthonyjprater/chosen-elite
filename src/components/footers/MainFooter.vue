@@ -68,7 +68,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: var(--grey);
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 1rem;
 }
 
