@@ -196,14 +196,14 @@ document.addEventListener('click', (e) => {
   }
 })
 
-// footerMenu.forEach(subMenu => {
-//   if (window.innerWidth > 768) {
-//     subMenu.classList.remove('hide')
-//   }
-// })
+footerMenu.forEach((subMenu) => {
+  if (window.innerWidth > 768) {
+    subMenu.classList.remove('hide')
+  }
+})
 
 function reportWindowSize() {
-  footerMenu.forEach(subMenu => {
+  footerMenu.forEach((subMenu) => {
     // if (window.innerWidth > 768) {
     //   subMenu.classList.remove('hide')
     // }
@@ -211,4 +211,4 @@ function reportWindowSize() {
   })
 }
 
-window.onresize = reportWindowSize;
+window.onresize = reportWindowSize

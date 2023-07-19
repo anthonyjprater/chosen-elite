@@ -47,9 +47,9 @@
               <a href="tel:+15555555555"><i class="fa-regular fa-envelope"></i></a>
               <a href="tel:+15555555555">(311) 555-2368</a></div>
             <div class="social-links">
-              <i class="fa-sharp fa-solid fa-paper-plane"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook-f"></i>
+              <a href=""><i class="fa-sharp fa-solid fa-paper-plane"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
           </div>
           <div class="copyright">
@@ -208,7 +208,7 @@ address .copyright {
     align-items: baseline;
     justify-content: center;
     padding: 2rem;
-    width: 70%;
+    width: 65%;
   }
 
   .footer-nav > ul {
@@ -227,15 +227,20 @@ address .copyright {
   display: none;
   }
 
-  button.footer-nav-trigger:hover {
-    color: var(--white);
+  button.footer-nav-trigger:hover,
+  button.footer-nav-trigger:focus {
+    color: var(--green);
+    background-color: transparent;
     outline: none;
     width:max-content;
-    border-radius: 30px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   }
 
+  button.footer-nav-trigger:active {
+    background-color: transparent;
+  }
+  
   li.has-sub-menu {
     display: flex;
     flex-direction: column;
@@ -246,6 +251,15 @@ address .copyright {
     text-align: left;
   }
 
+  .footer-links div {
+    align-self: baseline;
+  }
+
+  address .copyright {
+    align-items: baseline;
+  }
+
+  
   
 }
 </style>
