@@ -64,7 +64,8 @@ header {
 }
 header.transparent,
 nav.main-nav ul.transparent {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .logo {

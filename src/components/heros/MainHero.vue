@@ -35,7 +35,7 @@ h1 {
 }
 
 button.sign-up {
-  background-color: var(--green);
+  background-color: rgba(0, 255, 0, 1);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
