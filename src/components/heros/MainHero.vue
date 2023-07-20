@@ -23,7 +23,7 @@ const transparent = ref(true)
   gap: 2rem;
   width: 100vw;
   background: center/ cover no-repeat url("/placeholder-bg.jpg");
-  padding: 3rem;
+  padding: 4rem 3rem;
 }
 h1 {
   font-size: 1.25rem;
@@ -36,8 +36,11 @@ h1 {
 
 button.sign-up {
   background-color: rgba(0, 255, 0, 1);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   border-radius: 8px;
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .main-hero > header {
@@ -51,6 +54,18 @@ button.sign-up {
 }
 
 @media (min-width: 768px) {
-  
+  .main-hero {
+    height: 60vh;
+    gap: 5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button.sign-up {
+    padding: 1em 1.5em;
+  }
+
 }
 </style>

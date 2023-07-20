@@ -62,10 +62,13 @@ header {
   justify-content: space-between;
   background-color: var(--grey);
 }
-header.transparent,
-nav.main-nav ul.transparent {
-  background: rgba(0, 0, 0, 0.8);
+header.transparent {
+  background: rgba(0, 0, 0, 0.3);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav.main-nav ul.transparent {
+  background: transparent;
 }
 
 .logo {
