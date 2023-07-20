@@ -207,7 +207,9 @@ function reportWindowSize() {
     // if (window.innerWidth > 768) {
     //   subMenu.classList.remove('hide')
     // }
-    window.innerWidth > 768 ? subMenu.style.backgroundColor = "red" : subMenu.classList.add('.hide')
+    window.innerWidth > 768
+      ? subMenu.classList.remove('.hide')
+      : subMenu.classList.add('.hide')
   })
 }
 
