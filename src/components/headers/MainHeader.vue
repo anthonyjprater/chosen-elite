@@ -1,9 +1,15 @@
 <script setup>
-    
+const props = defineProps({
+  isTransparent: {
+    type: Boolean,
+    default: true,
+  },
+})
+
 </script>
 
 <template>
-    <header class="header">
+    <header class="header" :class="{ transparent: isTransparent }">
         <a href="#">
           <img src="/elite-logo.svg" class="logo" alt=""/>
           <span class="sr-only">Go to Team Chosen Elite Home Page</span>
@@ -19,7 +25,7 @@
             </svg>
             <span class="sr-only">Main menu</span>
             </button>
-            <ul>
+            <ul :class="{ transparent: isTransparent }">
                 <li class="has-sub-menu">
                   <button class="sub-menu-trigger">Hustle Team</button>
                   <ul class="sub-menu">
@@ -55,6 +61,10 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--grey);
+}
+header.transparent,
+nav.main-nav ul.transparent {
+  background: transparent;
 }
 
 .logo {

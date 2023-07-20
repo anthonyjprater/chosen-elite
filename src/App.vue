@@ -1,6 +1,6 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
-// import MainHeader from './components/headers/MainHeader.vue'
+import MainHeader from './components/headers/MainHeader.vue'
 // import MainFooter from './components/footers/MainFooter.vue'
 import MainHero from './components/heros/MainHero.vue';
 </script>
