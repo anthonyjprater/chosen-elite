@@ -25,6 +25,16 @@ const transparent = ref(true)
   background: center/ cover no-repeat url("/placeholder-bg.jpg");
   padding: 4rem 3rem;
 }
+
+.main-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1))
+}
+
 h1 {
   font-size: 1.25rem;
   color: var(--white);
@@ -32,21 +42,29 @@ h1 {
   text-wrap: balance;
   line-height: 1.3;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  z-index: 2;
 }
 
 button.sign-up {
-  background-color: rgba(0, 255, 0, 1);
+  background-color: rgba(55, 255, 55, 0.87);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   color: var(--white);
   font-weight: bold;
   letter-spacing: 1px;
+  z-index: 2;
+}
+
+button.sign-up:focus-visible,
+button.sign-up:hover {
+  scale: 0.95;
 }
 
 .main-hero > header {
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 
 .main-nav ul {
@@ -55,8 +73,9 @@ button.sign-up {
 
 @media (min-width: 768px) {
   .main-hero {
-    height: 60vh;
+    height: 65vh;
     gap: 5rem;
+    padding: 5rem;
   }
 
   h1 {

@@ -61,6 +61,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--grey);
+  margin-bottom: 2rem;
 }
 header.transparent {
   background: rgba(0, 0, 0, 0.3);
@@ -68,7 +69,7 @@ header.transparent {
 }
 
 nav.main-nav ul.transparent {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .logo {
@@ -187,6 +188,8 @@ button:active {
   padding: 0.3rem 0.3rem;
   color: inherit;
   text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
 }
 
 .main-nav ul.sub-menu {
@@ -215,6 +218,11 @@ header {
   font-size: 1rem;
 }
 
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
 .sub::after {
   display: inline-block;
   margin-inline-start: 0.5rem;
@@ -230,6 +238,7 @@ header {
   position: relative;
   flex-direction: row;
   padding: 0.5rem 0 0 0;
+  font-weight: bold;
 }
 
 .main-nav ul ul {
@@ -262,11 +271,15 @@ header {
 }
 
 .apply {
-  width: 4em;
   background-color: var(--green);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  padding: 3em;
-  border-radius: 15px;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+}
+
+.apply:hover,
+.apply:focus-visible {
+  scale: 0.95;
 }
 
 }
