@@ -5,7 +5,7 @@
 <template>
     <section>
         <h2>Our Programs</h2>
-        <p>Basketball academy for all levels. Our programs are designed for children, amateurs, and pros of all ages and skill levels. Get the training you need to reach your full potential.</p>
+        <p>We have individual programs for children, amateurs, and professionals. Our programs are tailored to the age and skill level of each group.</p>
         <div class="card-container">
 
         </div>
@@ -20,10 +20,19 @@
     justify-content: center;
     background-color: rgb(33, 33, 33);
     width: 100vw;
+    padding: 3rem 1.5rem;
+    gap: 2rem;
   }
 
   h2 {
     color: var(--green);
     text-wrap: balance;
   }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
 </style>
