@@ -21,7 +21,7 @@
     background-color: rgb(33, 33, 33);
     width: 100vw;
     padding: 3rem 1.5rem;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   h2 {
