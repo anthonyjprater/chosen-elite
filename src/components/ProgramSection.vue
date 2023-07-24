@@ -18,7 +18,7 @@
       'ages': 'From 6 to 9 years old',
       'days': 'Monday/Thursday/Friday',
       'time': '4pm-6pm',
-      'exceptions': 'conditions may change',
+      'exceptions': 'Conditions may change',
       'id': '1'
     },
     {
@@ -26,7 +26,7 @@
       'ages': 'From 6 to 9 years old',
       'days': 'Monday/Thursday/Friday',
       'time': '4pm-6pm',
-      'exceptions': 'conditions may change',
+      'exceptions': 'Conditions may change',
       'id': '2'
     },
     {
@@ -34,7 +34,7 @@
       'ages': 'From 6 to 9 years old',
       'days': 'Monday/Thursday/Friday',
       'time': '4pm-6pm',
-      'exceptions': 'conditions may change',
+      'exceptions': 'Conditions may change',
       'id': '3'
     },
     ])
@@ -68,6 +68,7 @@
   }
 
   .card-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
