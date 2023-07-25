@@ -28,21 +28,33 @@ const props = defineProps({
 
 <style scoped>
     article {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         background: rgba(47, 47, 47, 1);
         color: var(--green);
-        padding: 1.5rem 0.5rem;
+        padding: 1.5rem 1.5rem;
+        align-items: baseline;
     }
 
     h3 {
         text-transform: capitalize;
     }
 
+    article img {
+        align-self: center;
+        width: 100%;
+    }
+
+    /* 's q data-69(420) */
+
     article ul {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         margin-bottom: 1rem;
+        align-items: start;
+        list-style-type: none;
     }
 
 
