@@ -30,11 +30,13 @@ const props = defineProps({
     article {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        gap: 1rem;
+        width: min(320px, 100%);
         background: rgba(47, 47, 47, 1);
         color: var(--green);
         padding: 1.5rem 1.5rem;
         align-items: baseline;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
 
     h3 {
@@ -60,16 +62,22 @@ const props = defineProps({
 
 
     .read-more {
+        align-self: center;
         background-color: var(--green);
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        padding: 0.75em 1.5em;
+        padding: 0.75em 2em;
         border-radius: 8px;
-        margin: 1rem 0;
+        margin: 0 0 1rem;
+        text-shadow: inherit;
+        font-weight: bold;
+        letter-spacing: 0.5px;
     }
 
     .read-more:hover,
     .read-more:focus-visible {
         scale: 0.95;
+        color: rgba(0, 0, 0, 0.5);
+        text-shadow: none;
     }
 
 </style>
