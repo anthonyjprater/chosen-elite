@@ -37,6 +37,7 @@ const props = defineProps({
         padding: 1.5rem 1.5rem;
         align-items: baseline;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
     }
 
     h3 {
