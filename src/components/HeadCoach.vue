@@ -24,7 +24,7 @@
                 <li>Coach of the Year</li>
             </ul>
         </div>
-        <img src="" alt="" width="320px" height="480px">
+        <img src="/coach.png" alt="" width="320px" height="480px">
         <button class="sign-up">Sign up for training</button>
     </section>
 </template>
@@ -63,6 +63,7 @@ ul {
 img {
     width: 100%;
     height: auto;
+    background: #000;
 }
 
 button.sign-up {
