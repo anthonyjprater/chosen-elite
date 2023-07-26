@@ -41,6 +41,13 @@ section {
     gap: 1.5rem;
 }
 
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
 h2 {
     font-size: 1.2rem;
 }
@@ -89,7 +96,7 @@ button.sign-up:hover {
     }
 
     div {
-        width: calc(50vw);
+        width: 50vw;
     }
 
     img {
@@ -101,6 +108,7 @@ button.sign-up:hover {
     }
     button.sign-up {
     padding: 1em 1.5em;
+    align-self: flex-start;
   }
 }
 

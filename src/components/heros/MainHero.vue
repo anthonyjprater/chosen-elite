@@ -73,7 +73,7 @@ button.sign-up:hover {
 
 @media (min-width: 768px) {
   .main-hero {
-    height: 65vh;
+    height: 55vh;
     gap: 5rem;
     padding: 5rem;
   }
