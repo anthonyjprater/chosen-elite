@@ -9,7 +9,7 @@ const transparent = ref(true)
 <template>
   <div class="main-hero">
     <MainHeader :isTransparent="transparent"/>
-    <h1 class="hero-headline">Train Your Mind and Body for Basketball Success</h1>
+    <h2 class="hero-headline">Train Your Mind and Body for Basketball Success</h2>
     <button class="sign-up">Sign up for training</button>
   </div>
 </template>
@@ -35,7 +35,7 @@ const transparent = ref(true)
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1))
 }
 
-h1 {
+h2.hero-headline {
   font-size: 1.25rem;
   color: var(--white);
   width: max(30%,200px);

@@ -49,7 +49,7 @@ h1 {
   line-height: 1.1;
 }
 
-h1,h2,h3,h4,h5,h6 {line-height: 1;}
+h1,h2,h3,h4,h5,h6 {line-height: 1;text-wrap: balance;}
 
 button {
   border-radius: 8px;
@@ -62,9 +62,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  
-} 
 
 button:focus,
 button:focus-visible {
