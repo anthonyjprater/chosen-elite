@@ -4,14 +4,16 @@
 // import MainFooter from './components/footers/MainFooter.vue'
 // import MainHero from './components/heros/MainHero.vue';
 // import ProgramSection from './components/ProgramSection.vue';
-import HeadCoach from './components/HeadCoach.vue';
+// import HeadCoach from './components/HeadCoach.vue';
+import MainCarousel from './components/MainCarousel.vue';
 </script>
 
 <template>
   <!-- <MainHeader /> -->
   <!-- <MainHero /> -->
   <!-- <ProgramSection /> -->
-  <HeadCoach />
+  <!-- <HeadCoach /> -->
+  <MainCarousel />
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
