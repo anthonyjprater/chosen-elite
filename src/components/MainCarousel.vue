@@ -1,4 +1,7 @@
 <script setup>
+import CarouselItem from './CarouselItem.vue';
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 </script>
 
@@ -7,7 +10,17 @@
         <h2>Chosen Elite Academy</h2> 
         <span class="pitch">is the best choice for you</span>
         <div class="carousel-container">
-            <i class="fa-solid fa-basketball"></i>
+            <carousel :items-to-show="1.5">
+                <slide v-for="slide in 3" :key="slide">
+                <CarouselItem />
+                </slide>
+
+                <template #addons>
+                <navigation />
+                <pagination />
+                </template>
+            </carousel>
+            
         </div>
     </section>
 </template>
@@ -32,7 +45,10 @@ span.pitch {
 }
 
 .carousel-container {
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-basketball {
