@@ -13,8 +13,12 @@
 </template>
 
 <style scoped>
+
 section {
+    background: rgba(33, 33, 33, 1);
     width: 100vw;
+    padding: 3rem 1.5rem;
+    /* background: center/cover no-repeat url(/basketball.png), #000; */
 }
 
 h2,
