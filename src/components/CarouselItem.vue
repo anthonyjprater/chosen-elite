@@ -11,11 +11,6 @@
 
 <style scoped>
 
-.carousel__slide carousel__slide--visible carousel__slide--active {
-    width: 100%;
-  width: 100%;;
-}
-
 .fa-basketball {
     color: var(--grey);
     font-size: 1.5rem;

@@ -10,7 +10,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
         <h2>Chosen Elite Academy</h2> 
         <span class="pitch">is the best choice for you</span>
         <div class="carousel-container">
-            <carousel :items-to-show="1.5">
+            <carousel :items-to-show="1" :snapAlign="center">
                 <slide v-for="slide in 3" :key="slide">
                 <CarouselItem />
                 </slide>
@@ -50,6 +50,8 @@ span.pitch {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .fa-basketball {
     color: var(--grey);
