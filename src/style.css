@@ -97,6 +97,24 @@ button:focus-visible {
     background: #000;
 }
 
+.carousel__icon {
+  color: var(--green);
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 50%;
+}
+
+@media(min-width: 768px) {
+  
+  .carousel__track {
+    gap: 2rem;
+  }
+  
+  section.carousel {
+    width: 100vw;
+    padding: 0 1.5rem;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
