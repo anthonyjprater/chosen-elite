@@ -233,8 +233,8 @@ address .copyright {
     background-color: transparent;
     outline: none;
     width:max-content;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255 0.5);
+    scale: 0.95;
   }
 
   button.footer-nav-trigger:active {

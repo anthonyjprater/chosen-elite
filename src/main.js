@@ -19,6 +19,7 @@ const toggleMenu = (status) => {
     menu.classList.remove('hide')
     trigger.setAttribute('aria-expanded', 'true')
     trigger.setAttribute('aria-label', 'Close submenu.')
+
   } else {
     menu.classList.add('hide')
     trigger.setAttribute('aria-expanded', 'false')
@@ -27,8 +28,8 @@ const toggleMenu = (status) => {
 }
 
 // Set initial state for the button.
-trigger.setAttribute('aria-expanded', 'false')
-trigger.setAttribute('aria-label', 'Open submenu.')
+// trigger.setAttribute('aria-expanded', 'false')
+// trigger.setAttribute('aria-label', 'Open submenu.')
 
 // Listen for button click
 trigger.addEventListener('click', function () {
@@ -127,80 +128,80 @@ document.addEventListener('click', (e) => {
 })
 
 // // FOOTER NAVIGATION-------------------------------------------------------------------
-// const footerSubMenus = document.querySelectorAll('.footer-nav ul ul')
-// // Find all sub-menu trigger buttons. */
-// const footerMenuTriggers = document.querySelectorAll('.footer-nav-trigger')
+const footerSubMenus = document.querySelectorAll('.footer-nav ul ul')
+// Find all sub-menu trigger buttons. */
+const footerMenuTriggers = document.querySelectorAll('.footer-nav-trigger')
 
-// // Hide all sub-menus.
-// footerSubMenus.forEach((subMenu) => {
-//   subMenu.classList.add('hide')
-// })
+// Hide all sub-menus.
+footerSubMenus.forEach((subMenu) => {
+  subMenu.classList.add('hide')
+})
 
-// /**
-//  * Toggle sub-menu open/closed.
-//  * @param {DOM node} parent
-//  * @param {boolean} status
-//  */
-// const toggleFooterSubMenu = (parent, status) => {
-//   const trigger = parent.querySelector('button')
-//   const subMenu = parent.querySelector('ul')
-//   if (status == 'false') {
-//     parent.classList.add('open')
-//     subMenu.classList.remove('hide')
-//     trigger.setAttribute('aria-expanded', 'true')
-//     trigger.setAttribute('aria-label', 'Close news menu.')
-//   } else {
-//     parent.classList.remove('open')
-//     subMenu.classList.add('hide')
-//     trigger.setAttribute('aria-expanded', 'false')
-//     trigger.setAttribute('aria-label', 'Open news menu.')
-//   }
-// }
+/**
+ * Toggle sub-menu open/closed.
+ * @param {DOM node} parent
+ * @param {boolean} status
+ */
+const toggleFooterSubMenu = (parent, status) => {
+  const trigger = parent.querySelector('button')
+  const subMenu = parent.querySelector('ul')
+  if (status == 'false') {
+    parent.classList.add('open')
+    subMenu.classList.remove('hide')
+    trigger.setAttribute('aria-expanded', 'true')
+    trigger.setAttribute('aria-label', 'Close news menu.')
+  } else {
+    parent.classList.remove('open')
+    subMenu.classList.add('hide')
+    trigger.setAttribute('aria-expanded', 'false')
+    trigger.setAttribute('aria-label', 'Open news menu.')
+  }
+}
 
-// // For each trigger button:
-// // - add a down-arrow
-// // - set aria attributes
-// // - add event listener
-// footerMenuTriggers.forEach((trigger) => {
-//   trigger.classList.add('sub')
-//   trigger.setAttribute('aria-expanded', 'false')
-//   trigger.setAttribute('aria-label', 'Open news menu.')
-//   trigger.addEventListener('click', function () {
-//     const parent = trigger.parentElement
-//     const status = trigger.getAttribute('aria-expanded')
-//     toggleFooterSubMenu(parent, status)
-//   })
-// })
+// For each trigger button:
+// - add a down-arrow
+// - set aria attributes
+// - add event listener
+footerMenuTriggers.forEach((trigger) => {
+  trigger.classList.add('sub')
+  trigger.setAttribute('aria-expanded', 'false')
+  trigger.setAttribute('aria-label', 'Open news menu.')
+  trigger.addEventListener('click', function () {
+    const parent = trigger.parentElement
+    const status = trigger.getAttribute('aria-expanded')
+    toggleFooterSubMenu(parent, status)
+  })
+})
 
-// // Close sub-menus when user tabs outside menu.
-// // document.addEventListener('focusin', (e) => {
-// //   let currentSubMenu = document.querySelector('.open')
-// //   if (
-// //     currentSubMenu &&
-// //     e.target.closest('.has-sub-menu') !== currentSubMenu &&
-// //     window.innerWidth < 768
-// //   ) {
-// //     toggleFooterSubMenu(currentSubMenu, true)
-// //   }
-// // })
+// Close sub-menus when user tabs outside menu.
+document.addEventListener('focusin', (e) => {
+  let currentSubMenu = document.querySelector('.open')
+  if (
+    currentSubMenu &&
+    e.target.closest('.has-sub-menu') !== currentSubMenu &&
+    window.innerWidth < 768
+  ) {
+    toggleFooterSubMenu(currentSubMenu, true)
+  }
+})
 
-// // Close sub-menus when user clicks outside menu.
-// document.addEventListener('click', (e) => {
-//   let currentSubMenu = document.querySelector('.open')
-//   if (
-//     currentSubMenu &&
-//     e.target.closest('.has-sub-menu') !== currentSubMenu &&
-//     window.innerWidth < 768
-//   ) {
-//     toggleFooterSubMenu(currentSubMenu, true)
-//   }
-// })
+// Close sub-menus when user clicks outside menu.
+document.addEventListener('click', (e) => {
+  let currentSubMenu = document.querySelector('.open')
+  if (
+    currentSubMenu &&
+    e.target.closest('.has-sub-menu') !== currentSubMenu &&
+    window.innerWidth < 768
+  ) {
+    toggleFooterSubMenu(currentSubMenu, true)
+  }
+})
 
-// // footerMenu.forEach((subMenu) => {
-// //   if (window.innerWidth > 768) {
-// //     subMenu.classList.remove('hide')
-// //   }
-// // })
+footerMenu.forEach((subMenu) => {
+  if (window.innerWidth > 768) {
+    subMenu.classList.remove('hide')
+  }
+})
 
 // function reportWindowSize() {
 //   footerMenu.forEach((subMenu) => {
@@ -211,15 +212,15 @@ document.addEventListener('click', (e) => {
 //   })
 // }
 
-// function reportWindowSize() {
-//   footerMenu.forEach((subMenu) => {
-//     // if (window.innerWidth > 768) {
-//     //   subMenu.classList.remove('hide')
-//     // }
-//     window.innerWidth > 768
-//       ? subMenu.classList.remove('.hide')
-//       : subMenu.classList.add('.hide')
-//   })
-// }
+function reportWindowSize() {
+  footerMenu.forEach((subMenu) => {
+    // if (window.innerWidth > 768) {
+    //   subMenu.classList.remove('hide')
+    // }
+    window.innerWidth > 768
+      ? subMenu.classList.remove('.hide')
+      : subMenu.classList.add('.hide')
+  })
+}
 
-// window.onresize = reportWindowSize
+window.onresize = reportWindowSize
