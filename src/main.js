@@ -19,7 +19,6 @@ const toggleMenu = (status) => {
     menu.classList.remove('hide')
     trigger.setAttribute('aria-expanded', 'true')
     trigger.setAttribute('aria-label', 'Close submenu.')
-
   } else {
     menu.classList.add('hide')
     trigger.setAttribute('aria-expanded', 'false')
@@ -197,20 +196,22 @@ document.addEventListener('click', (e) => {
   }
 })
 
-footerMenu.forEach((subMenu) => {
-  if (window.innerWidth > 768) {
-    subMenu.classList.remove('hide')
-  }
-})
+// footerMenu.forEach((subMenu) => {
+//   if (window.innerWidth > 768) {
+//     subMenu.classList.remove('hide')
+//   }
+// })
 
-// function reportWindowSize() {
-//   footerMenu.forEach((subMenu) => {
-//     // if (window.innerWidth > 768) {
-//     //   subMenu.classList.remove('hide')
-//     // }
-//     window.innerWidth > 768 ? subMenu.classList.remove('.hide') : subMenu.classList.add('.hide')
-//   })
-// }
+function reportWindowSize() {
+  footerMenu.forEach((subMenu) => {
+    // if (window.innerWidth > 768) {
+    //   subMenu.classList.remove('hide')
+    // }
+    window.innerWidth > 768
+      ? subMenu.classList.remove('.hide')
+      : subMenu.classList.add('.hide')
+  })
+}
 
 function reportWindowSize() {
   footerMenu.forEach((subMenu) => {
