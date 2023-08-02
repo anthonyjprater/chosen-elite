@@ -107,6 +107,14 @@ button:focus-visible {
   border-radius: 50%;
 }
 
+button.carousel__pagination-button::after {
+  background: rgba(33, 33, 33, 0.7);
+}
+
+button.carousel__pagination-button:hover::after, .carousel__pagination-button--active::after {
+  background: var(--green);
+}
+
 @media(min-width: 768px) {
   
   .carousel__track {

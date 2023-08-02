@@ -17,11 +17,24 @@ const props = defineProps({
     }
     
     figure {
-      width: min(300px, 100%);
+      /* width: min(300px, 100%); */
     }
 
     img {
       width: 100%;
       height: auto;
+      border-radius: 8px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), -1px -1px 3px rgba(0, 0, 0, 0.8);
+      scale: 0.9;
     }
+
+    img:hover {
+      scale: 1;
+      box-shadow: none;
+    }
+    
+    button {
+      color: red;
+    }
+
 </style>

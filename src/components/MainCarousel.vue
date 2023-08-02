@@ -27,7 +27,7 @@ const breakpoints = {
         <h2>Chosen Elite Academy</h2> 
         <span class="pitch">is the best choice for you</span>
         <div class="carousel-container">
-            <carousel :items-to-show="1" :snapAlign="center" :breakpoints="breakpoints">
+            <carousel :items-to-show="1" :snapAlign=center :breakpoints="breakpoints">
                 <slide v-for="slide in slides" :key="slide.id">
                     <CarouselItem :slide="slide" />
                 </slide>

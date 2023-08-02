@@ -23,10 +23,10 @@ const breakpoints = {
 </script>
 
 <template>
-    <section class="info">
+    <section class="main-gallery">
         <h2>Gallery</h2>
         <div class="carousel-container">
-            <carousel :items-to-show="1" :snapAlign="center" :breakpoints="breakpoints">
+            <carousel :items-to-show="1" :snapAlign=center wrapAround :breakpoints="breakpoints" itemsToShow="1.5">
                 <slide v-for="image in images" :key="image.id">
                     <GalleryItem :image="image" />
                 </slide>
@@ -35,6 +35,17 @@ const breakpoints = {
                 <pagination />
                 </template>
             </carousel>
+
+            <iframe
+                width="600"
+                height="450"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFpDkCJ6BNs0yU4G_W3fM78FLIMv8qRPA
+                    &q=Space+Needle,Seattle+WA">
+            </iframe>
             
         </div>
     </section>
@@ -42,11 +53,14 @@ const breakpoints = {
 
 <style scoped>
 
-section.info {
+section.main-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     background: rgba(47, 47, 47, 1);
     width: 100vw;
     padding: 3rem 1.5rem;
-    /* background: center/cover no-repeat url(/basketball.png), #000; */
+    border: 1px solid rebeccapurple;
 }
 
 h2 {
