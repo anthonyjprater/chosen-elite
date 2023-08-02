@@ -56,8 +56,12 @@ h2 {
 }
 
 h2,
-h2 > span {
-    font-size: 1.2rem;
+span {
+    color: var(--green);
+}
+
+span {
+    font-size: 1.25rem;
 }
 
 span.pitch {

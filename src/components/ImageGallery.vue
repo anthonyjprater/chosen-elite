@@ -2,7 +2,7 @@
 import { ref } from "vue"
 import GalleryItem from "./GalleryItem.vue";
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
 
 const images = ref([
   { id: '1', title: 'Elevate Your Game with Our Elite Basketball Training Academy', image: "/image_1.jpg"},
@@ -32,7 +32,6 @@ const breakpoints = {
                 </slide>
 
                 <template #addons>
-                <navigation />
                 <pagination />
                 </template>
             </carousel>
@@ -42,5 +41,16 @@ const breakpoints = {
 </template>
 
 <style scoped>
+
+section.info {
+    background: rgba(47, 47, 47, 1);
+    width: 100vw;
+    padding: 3rem 1.5rem;
+    /* background: center/cover no-repeat url(/basketball.png), #000; */
+}
+
+h2 {
+    color: var(--green);
+}
 
 </style>
