@@ -27,8 +27,8 @@ const toggleMenu = (status) => {
 }
 
 // Set initial state for the button.
-trigger.setAttribute('aria-expanded', 'false')
-trigger.setAttribute('aria-label', 'Open submenu.')
+// trigger.setAttribute('aria-expanded', 'false')
+// trigger.setAttribute('aria-label', 'Open submenu.')
 
 // Listen for button click
 trigger.addEventListener('click', function () {
