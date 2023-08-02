@@ -25,7 +25,7 @@ const props = defineProps({
             </svg>
             <span class="sr-only">Main menu</span>
             </button>
-            <ul :class="{ transparent: isTransparent }">
+            <ul :class="{ transparent: isTransparent }" class="hide">
                 <li class="has-sub-menu">
                   <button class="sub-menu-trigger">Hustle Team</button>
                   <ul class="sub-menu">
