@@ -213,15 +213,4 @@ function reportWindowSize() {
   })
 }
 
-function reportWindowSize() {
-  footerMenu.forEach((subMenu) => {
-    // if (window.innerWidth > 768) {
-    //   subMenu.classList.remove('hide')
-    // }
-    window.innerWidth > 768
-      ? subMenu.classList.remove('.hide')
-      : subMenu.classList.add('.hide')
-  })
-}
-
 window.onresize = reportWindowSize
