@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "vee-validate": "^4.5.8",
     "vue": "^3.2.47",
     "vue-carousel": "^0.18.0",
     "vue3-carousel": "^0.3.1"

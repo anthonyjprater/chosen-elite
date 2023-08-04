@@ -8,6 +8,7 @@ import HeadCoach from './components/HeadCoach.vue';
 import MainCarousel from './components/MainCarousel.vue';
 import ImageGallery from './components/ImageGallery.vue';
 import MainContact from './components/MainContact.vue';
+import MainSignUp from './components/MainSignUp.vue';
 
 </script>
 
@@ -20,6 +21,7 @@ import MainContact from './components/MainContact.vue';
     <MainCarousel />
     <ImageGallery />
     <MainContact />
+    <MainSignUp />
   </main>
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
