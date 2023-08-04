@@ -7,6 +7,7 @@ import ProgramSection from './components/ProgramSection.vue';
 import HeadCoach from './components/HeadCoach.vue';
 import MainCarousel from './components/MainCarousel.vue';
 import ImageGallery from './components/ImageGallery.vue';
+import MainContact from './components/MainContact.vue';
 
 </script>
 
@@ -18,6 +19,7 @@ import ImageGallery from './components/ImageGallery.vue';
     <HeadCoach />
     <MainCarousel />
     <ImageGallery />
+    <MainContact />
   </main>
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
