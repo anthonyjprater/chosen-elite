@@ -20,6 +20,25 @@ const breakpoints = {
       }
     }
 
+    function initMap() {
+        const myLatLng = {
+            lat: 47.9305305480957,
+            lng: -122.30045318603516
+        };
+        const map = new google.maps.Map(document.getElementById("gmp-map"), {
+            zoom: 14,
+            center: myLatLng,
+            fullscreenControl: false,
+            zoomControl: true,
+            streetViewControl: false
+        });
+        new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: "My location"
+        });
+    }
+
 </script>
 
 <template>
@@ -34,20 +53,16 @@ const breakpoints = {
                 <template #addons>
                 <pagination />
                 </template>
-            </carousel>
-
-            <iframe
-                width="600"
-                height="450"
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFpDkCJ6BNs0yU4G_W3fM78FLIMv8qRPA
-                    &q=Space+Needle,Seattle+WA">
-            </iframe>
-            
+            </carousel>            
         </div>
+
+        
+        <div id="gmp-map"></div>
+        
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&maptype=satellite&key=AIzaSyBFpDkCJ6BNs0yU4G_W3fM78FLIMv8qRPA" alt="">
+
+        <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=47.93093915519747,-122.30126015396925&zoom=5&size=150x150&key=AIzaSyBFpDkCJ6BNs0yU4G_W3fM78FLIMv8qRPA" alt="">
+        47.93093915519747, -122.30126015396925 -->
     </section>
 </template>
 
@@ -60,11 +75,16 @@ section.main-gallery {
     background: rgba(47, 47, 47, 1);
     width: 100vw;
     padding: 3rem 1.5rem;
-    border: 1px solid rebeccapurple;
 }
 
 h2 {
     color: var(--green);
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ #gmp-map {
+  height: 100%;
 }
 
 </style>

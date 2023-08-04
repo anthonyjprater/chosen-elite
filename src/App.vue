@@ -1,6 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import MainHeader from './components/headers/MainHeader.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import MainHeader from './components/headers/MainHeader.vue'
 import MainFooter from './components/footers/MainFooter.vue'
 import MainHero from './components/heros/MainHero.vue';
 import ProgramSection from './components/ProgramSection.vue';
@@ -11,9 +11,8 @@ import ImageGallery from './components/ImageGallery.vue';
 </script>
 
 <template>
-  <MainHeader />
+  <!-- <MainHeader /> -->
   <main>
-
     <MainHero />
     <ProgramSection />
     <HeadCoach />

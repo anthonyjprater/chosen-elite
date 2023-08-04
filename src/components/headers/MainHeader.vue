@@ -69,7 +69,7 @@ header.transparent {
 }
 
 nav.main-nav ul.transparent {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .logo {
@@ -169,6 +169,7 @@ button:active {
   z-index: 1;
   color: var(--white);
   background: var(--grey);
+  z-index: 3;
 }
 
 .main-nav li {
@@ -239,6 +240,7 @@ header {
   flex-direction: row;
   padding: 0.5rem 0 0 0;
   font-weight: bold;
+  z-index: 3;
 }
 
 .main-nav ul ul {

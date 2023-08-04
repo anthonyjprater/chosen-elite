@@ -24,6 +24,7 @@ const transparent = ref(true)
   width: 100vw;
   background: center/ cover no-repeat url("/placeholder-bg.jpg");
   padding: 4rem 3rem;
+  position: relative;
 }
 
 .main-hero::after {
@@ -32,7 +33,7 @@ const transparent = ref(true)
   inset: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1))
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1))
 }
 
 h2.hero-headline {

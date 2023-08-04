@@ -22,7 +22,7 @@ console.log(props)
 .carousel__item {
     display: flex;
     flex-direction: column;
-    gap: 0rem;
+    gap: 2rem;
     padding: 4rem 0;
 }
 
