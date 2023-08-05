@@ -5,7 +5,7 @@
 <template>
     <section class="main-contact">
         <figure>
-            <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=OlympicViewMiddleSchool,Mukilteo,WA&zoom=14&size=400x400&style=feature:road.local|color:0x878787&style=feature:road.highway|color:0xaaaaaa&style=feature:water|color:0x222222&style=feature:landscape|color:0x474747&style=feature:transit|color:0x676767&style=feature:poi|color:0x474747&style=feature:poi.school|color:0x00ff00&style=feature:poi|element:labels.text.stroke|color:0xffffff&style=feature:poi.school|element:labels.text.stroke|color:0x00ff00&style=feature:poi.school|element:labels.text.fill|color:0x000000&key={INSERT KEY}" alt="map to training facilities"> -->
+            <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=OlympicViewMiddleSchool,Mukilteo,WA&zoom=14&size=400x400&style=feature:road.local|color:0x878787&style=feature:road.highway|color:0xaaaaaa&style=feature:water|color:0x222222&style=feature:landscape|color:0x474747&style=feature:transit|color:0x676767&style=feature:poi|color:0x474747&style=feature:poi.school|color:0x00ff00&style=feature:poi|element:labels.text.stroke|color:0xffffff&style=feature:poi.school|element:labels.text.stroke|color:0x00ff00&style=feature:poi.school|element:labels.text.fill|color:0x000000&key=process.env.API_KEY" alt="map to training facilities"> -->
         </figure>
     </section>
 </template>
