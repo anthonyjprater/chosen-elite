@@ -72,34 +72,28 @@ form {
 
 div.form-inputs {
   display: flex;
-  align-items: flex-end;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 1.5rem 0;
+  flex-wrap:  wrap;
   gap: 2.5rem;
+  padding: 1.5rem 0;
+  width: 100%;
   background: rgba(47, 47, 47, 1);
 }
 
-div.form-inputs div {
-  display: flex;
+
+
+#name {
+  flex-grow: 1;
 }
 
-/*
-div #name {
-  flex-grow: 1;
-  flex-basis: 160px;
-}
-div #email {
-  flex-grow: 3;
-  flex-basis: 200px;
+#email {
+  flex: 3;
 }
 
-div #phoneNumber {
+#phoneNumber {
   flex-grow: 1;
-  flex-basis: 80px;
 }
-*/
 
 p.privacy-message {
   font-size: 0.75rem;
