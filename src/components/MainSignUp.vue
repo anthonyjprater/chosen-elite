@@ -81,7 +81,14 @@ div.form-inputs {
   background: rgba(47, 47, 47, 1);
 }
 
+div.form-inputs div {
+  width: min(300px, 600px);
+}
 
+input {
+  padding: 1rem;
+  width: min(250px, 100%);
+}
 
 #name {
   flex-grow: 1;
