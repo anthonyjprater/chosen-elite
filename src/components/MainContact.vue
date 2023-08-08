@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
+
+
 const apiKey = ref(import.meta.env.API_KEY)
 
 </script>
