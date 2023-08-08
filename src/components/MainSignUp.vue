@@ -73,7 +73,7 @@ form {
 div.form-inputs {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap:  wrap;
   gap: 2.5rem;
   padding: 1.5rem 0;
@@ -91,19 +91,24 @@ input {
 }
 
 #name {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 #email {
-  flex: 3;
+  flex: 1;
 }
 
 #phoneNumber {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 p.privacy-message {
   font-size: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  div.form-inputs {
+    flex-direction: row;
+  }
+}
 </style>
