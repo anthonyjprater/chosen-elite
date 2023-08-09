@@ -48,11 +48,12 @@ section.info {
     background: rgba(33, 33, 33, 1);
     width: 100vw;
     padding: 3rem 1.5rem;
+    gap: 0rem;
     /* background: center/cover no-repeat url(/basketball.png), #000; */
 }
 
 h2 {
-    margin: 1rem 0 0.25rem;
+    margin: 1rem 0 0.5rem.25rem;
 }
 
 h2,
