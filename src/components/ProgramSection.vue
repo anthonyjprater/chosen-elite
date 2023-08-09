@@ -19,7 +19,8 @@
       'days': 'Monday/Thursday/Friday',
       'time': '3pm-5pm',
       'exceptions': 'Conditions may change',
-      'id': '1'
+      'id': '1',
+      'image': '/youth_player_bg.png'
     },
     {
       'title': 'amateurs',
@@ -27,7 +28,8 @@
       'days': 'Monday/Wednesday/Friday',
       'time': '6pm-8pm',
       'exceptions': 'Conditions may change',
-      'id': '2'
+      'id': '2',
+      'image': '/amateur_player.png'
     },
     {
       'title': 'professional',
@@ -35,7 +37,8 @@
       'days': 'Tuesday/Thursday',
       'time': '5pm-8pm',
       'exceptions': 'Conditions may change',
-      'id': '3'
+      'id': '3',
+      'image': '/pro_player.png'
     },
     ])
 </script>

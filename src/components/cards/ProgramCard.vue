@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
     <article v-for="program in programs" :key='program.id'>
         <h3>{{ program.title }}</h3>
-        <img src="" alt="" width="250" height="250">
+        <img :src="program.image" alt="" width="250" height="250">
         <ul>
             <li>{{ program.ages }}</li>
             <li>{{ program.days }}</li>
