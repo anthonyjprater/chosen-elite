@@ -40,7 +40,7 @@ import { useField, useForm } from 'vee-validate';
             </div>
           </div>
           <p class="privacy-message">By clicking button "send" you agree to the privacy policy and data processing</p>
-          <button type="submit">Submit</button>
+          <button class="btn-sign-up" type="submit">Submit</button>
         </form>
     </section>
 </template>
@@ -104,6 +104,25 @@ input {
 
 p.privacy-message {
   font-size: 0.75rem;
+}
+
+.btn-sign-up {
+  align-self: center;
+  background-color: var(--green);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.75em 2em;
+  border-radius: 8px;
+  margin: 0 0 1rem;
+  text-shadow: inherit;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.btn-sign-up:hover,
+.btn-sign-up:focus-visible {
+    scale: 0.95;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
 }
 
 @media (min-width: 768px) {

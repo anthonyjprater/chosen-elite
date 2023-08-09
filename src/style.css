@@ -125,6 +125,11 @@ button.carousel__pagination-button:hover::after, .carousel__pagination-button--a
     width: 100vw;
     padding: 0 1.5rem;
   }
+
+  div.carousel__viewport {
+    width: 90%;
+  }
+
 }
 
 @media (prefers-color-scheme: light) {

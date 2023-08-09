@@ -58,7 +58,9 @@ button.sign-up {
 
 button.sign-up:focus-visible,
 button.sign-up:hover {
-  scale: 0.95;
+    scale: 0.95;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
 }
 
 .main-hero > header {
