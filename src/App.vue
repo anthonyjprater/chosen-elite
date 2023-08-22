@@ -9,19 +9,21 @@ import MainCarousel from './components/MainCarousel.vue';
 import ImageGallery from './components/ImageGallery.vue';
 import MainContact from './components/MainContact.vue';
 import MainSignUp from './components/MainSignUp.vue';
+import TrainingPrograms from './views/TrainingPrograms.vue';
 
 </script>
 
 <template>
   <!-- <MainHeader /> -->
   <main>
-    <MainHero />
+    <TrainingPrograms />
+    <!-- <MainHero />
     <ProgramSection />
     <HeadCoach />
     <MainCarousel />
     <ImageGallery />
     <MainContact />
-    <MainSignUp />
+    <MainSignUp /> -->
   </main>
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
