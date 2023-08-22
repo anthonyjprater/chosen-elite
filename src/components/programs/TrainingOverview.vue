@@ -6,31 +6,15 @@ const props = defineProps({
     type: Object,
     required: true,
   },
-  text1: {
-    type: Object,
-    default: "",
-  },
-  text2: {
-    type: Object,
-    default: "",
-  },
-  text3: {
-    type: Object,
-    default: "",
-  },
-  text4: {
-    type: Object,
-    default: "",
-  }
 });
 
-const title = ref(props.overviews.heading);
+const title = ref(props.overview.heading);
 </script>
 
 <template>
     <section>
         <!-- <h2>Training for Children</h2> -->
-        <h2>{{ title }}</h2>
+        <h2>gnfgn</h2>
         <article>
             <!-- <p>A children's training session at Chosen Elite Academy is a fun and intensive experience that develops children's physical and technincal skills in basketball. The training is conducted by qualified coaches who help children understand and enjoy the game.</p>
             <p>During the training, children learn the basics of basketball, such as ball control, passing, shooting, and defense. They are trained in small groups, which allow each child to recieve individual attention from the coaches. During the training process, children learn to work as a team, develop coordination and flexibility, and also improve their physical fitness.</p>

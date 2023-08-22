@@ -23,7 +23,7 @@ const overviews = ref([
 
 <template>
     <HeroHeader :item = "items[1]" />
-    <TrainingOverview :overviews = "overviews[0]" />
+    <TrainingOverview :overview = "overviews[0]" />
 
     <!-- <MyComponent :item="items[0]" /> -->
 </template>
