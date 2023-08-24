@@ -5,15 +5,23 @@ const props = defineProps({
   overview: {
     type: Array,
   },
+  details: {
+    type: Array,
+  },
+  summary: {
+    type: Array,
+  }
 });
 
 const overview = ref(props.overview);
+const details = ref(props.details)
+const summary = ref(props.summary)
 </script>
 
 <template>
     <section>
-        <!-- <h2>Training for Children</h2> -->
-        <h2>{{ overview[0].heading }}</h2>
+        <!--Program Summary Article-->
+        <h1>{{ overview[0].heading }}</h1>
         <article>
             <!-- <p>A children's training session at Chosen Elite Academy is a fun and intensive experience that develops children's physical and technincal skills in basketball. The training is conducted by qualified coaches who help children understand and enjoy the game.</p>
             <p>During the training, children learn the basics of basketball, such as ball control, passing, shooting, and defense. They are trained in small groups, which allow each child to recieve individual attention from the coaches. During the training process, children learn to work as a team, develop coordination and flexibility, and also improve their physical fitness.</p>
@@ -23,44 +31,47 @@ const overview = ref(props.overview);
             <p>{{ overview[0].text2 }}</p>
             <p>{{ overview[0].text3 }}</p>
             <p>{{ overview[0].text4 }}</p>
-            
+        </article>  
+        
+        <!--Program Coach Article-->
         <article>
-            <h3>Children's Coach - TP</h3>
-            <p></p>
+            <h2>{{ summary[0].heading }}</h2>
+            <img src="coach.png" alt="" />
+            <p>{{ summary[0].summary }}</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>{{ summary[0].info[1].content }}</li>
+                <li>{{ summary[0].info[2].content }}</li>
+                <li>{{ summary[0].info[0].content }}</li>
+            </ul>
+        </article>
+        
+        <!--Program Details Article-->
+        <article>
+            <h2>{{ details[0].heading}}</h2>
+            <ul>
+                <li>
+                    <span>{{ details[0].drills[0].title }}</span>
+                    <p>{{ details[0].drills[0].content }}</p>
+                </li>
+                <li>
+                    <span>{{ details[0].drills[1].title }}</span>
+                    <p>{{ details[0].drills[1].content }}</p>
+                </li>
+                <li>
+                    <span>{{ details[0].drills[2].title }}</span>
+                    <p>{{ details[0].drills[2].content }}</p>
+                </li>
+                <li>
+                    <span>{{ details[0].drills[3].title }}</span>
+                    <p>{{ details[0].drills[3].content }}</p>
+                </li>
+                <li>
+                    <span>{{ details[0].drills[4].title }}</span>
+                    <p>{{ details[0].drills[4].content }}</p>
+                </li>
             </ul>
         </article>
 
-        <article>
-            <h3>Training Program</h3>
-            <ul>
-                <li>
-                    <span>Warm-up</span><i></i>
-                    <p>The training begins with a warm-up to prepare the child's body for physical activity. The warm-up includes stretching exercises, muscle warm-up, and light cardio training.</p>
-                </li>
-                <li>
-                    <span>Shooting Technique</span><i></i>
-                    <p>The second step is teaching shooting techniques, including free throws layups, and jump-shots. Children learn proper stance, shooting form, ball trajectory, and develop accuract in scoring.</p>
-                </li>
-                <li>
-                    <span>Passing</span><i></i>
-                    <p>The next stage focuses on teaching passing techniques. Children learn how to pass the ball to each other using various methods, including cross-court passes, outlet passes, and bounce passes. Coaches help children learn proper passing techniques and develop a sense of timing.</p>
-                </li>
-                <li>
-                    <span>Defense</span><i></i>
-                    <p>Learning defensive skills is an important part of the training program. Children learn proper positioning, ball interception, and blocking opponents shots. Coaches also teach children how to move on the court and switch between offense and defense.</p>
-                </li>
-                <li>
-                    <span>Game Practice</span><i></i>
-                    <p>At the end of the training session, children have the opportunity to play games to showcase their new skills and techniques. Coaches monitor the gameplay and provide inidiviual feedback to help each child improve their skills. Game practice also helps children develop teamwork and learn to play as a cohesive unit.</p>
-                </li>
-            </ul>
-        </article>
-
-        </article>
     </section>
 </template>
 
@@ -75,4 +86,41 @@ section {
   padding: 3rem 1.5rem;
   gap: 2rem;
 }
+
+h1 {
+    font-size: 1.5rem;
+    place-self: start;
+    color: var(--green);
+    text-wrap: balance;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items : baseline;
+}
+
+article p {
+    text-align: left;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+article ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    gap: 0.5rem;
+    text-align: left;
+}
+
 </style>
