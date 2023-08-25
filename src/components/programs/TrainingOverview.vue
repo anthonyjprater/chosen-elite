@@ -33,7 +33,7 @@ const details = ref(props.details)
 
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     place-self: start;
     color: var(--green);
     text-wrap: balance;

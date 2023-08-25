@@ -25,15 +25,6 @@ const summary = ref(props.summary)
 </template>
 
 <style scoped>
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  padding: 3rem 1.5rem;
-  gap: 2rem;
-}
 
 h1 {
     font-size: 1.5rem;
@@ -66,7 +57,7 @@ article ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 1rem;
+    padding: 0 1rem;
     gap: 0.5rem;
     text-align: left;
 }

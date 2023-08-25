@@ -56,7 +56,7 @@ const title = ref(props.item.title);
 }
 
 h2.hero-headline {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--white);
   width: max(30%,200px);
   text-wrap: balance;

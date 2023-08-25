@@ -15,7 +15,13 @@ const details = ref(props.details)
 <article>
     <h2>{{ details[0].heading}}</h2>
     <ul>
-        <li>
+        <li v-for="(drill) in details[0].drills">
+            <div>
+                <span>{{ drill.title }}</span>
+                <p>{{ drill.content }}</p>
+            </div>
+        </li>
+        <!-- <li>
             <span>{{ details[0].drills[0].title }}</span>
             <p>{{ details[0].drills[0].content }}</p>
         </li>
@@ -34,21 +40,12 @@ const details = ref(props.details)
         <li>
             <span>{{ details[0].drills[4].title }}</span>
             <p>{{ details[0].drills[4].content }}</p>
-        </li>
+        </li> -->
     </ul>
 </article>
 </template>
 
 <style scoped>
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  padding: 3rem 1.5rem;
-  gap: 2rem;
-}
 
 h1 {
     font-size: 1.5rem;
@@ -81,10 +78,24 @@ article ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 1rem;
-    gap: 0.5rem;
+    padding: 0 1rem;
+    gap: 3rem;
     text-align: left;
 }
 
+li div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0 1rem;
+}
+
+
+li::marker {
+    content: "🏀";
+    font-size: 1rem;
+    color: var(--green);
+    
+}
 
 </style>
