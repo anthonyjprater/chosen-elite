@@ -3,6 +3,8 @@ import { ref } from 'vue';
 // import MainHero from '../components/heros/MainHero.vue'
 import HeroHeader from '../components/headers/HeroHeader.vue'
 import TrainingOverview from '../components/programs/TrainingOverview.vue'
+import TrainingCoach from '../components/programs/TrainingCoach.vue';
+import TrainingDetails from '../components/programs/TrainingDetails.vue'
 
 const items = ref([
     { title: 'Train Your Mind and Body for Basketball Success' },
@@ -94,8 +96,11 @@ const programDetails = ref([
 
 <template>
     <HeroHeader :item = "items[1]" />
-    <TrainingOverview :overview = "programOverviews" :summary = "coachSummary" :details="programDetails"/>
-
+    <section>
+      <TrainingOverview :overview = "programOverviews" :summary = "coachSummary" />
+      <TrainingCoach :summary = "coachSummary"/>
+      <TrainingDetails :details="programDetails" />
+    </section>
 </template>
 
 <style scoped>
