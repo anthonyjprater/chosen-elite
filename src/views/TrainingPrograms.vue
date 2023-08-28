@@ -5,6 +5,7 @@ import HeroHeader from '../components/headers/HeroHeader.vue'
 import TrainingOverview from '../components/programs/TrainingOverview.vue'
 import TrainingCoach from '../components/programs/TrainingCoach.vue';
 import TrainingDetails from '../components/programs/TrainingDetails.vue'
+import signUpButton from '../components/buttons/signUpButton.vue';
 
 const items = ref([
     { title: 'Train Your Mind and Body for Basketball Success' },
@@ -100,7 +101,7 @@ const programDetails = ref([
       <TrainingOverview :overview = "programOverviews" :summary = "coachSummary" />
       <TrainingCoach :summary = "coachSummary"/>
       <TrainingDetails :details="programDetails" />
-      
+      <signUpButton />
     </section>
 </template>
 

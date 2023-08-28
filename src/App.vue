@@ -10,13 +10,15 @@ import ImageGallery from './components/ImageGallery.vue';
 import MainContact from './components/MainContact.vue';
 import MainSignUp from './components/MainSignUp.vue';
 import TrainingPrograms from './views/TrainingPrograms.vue';
+import applyForm from './views/applyForm.vue';
 
 </script>
 
 <template>
   <!-- <MainHeader /> -->
   <main>
-    <TrainingPrograms />
+    <applyForm />
+    <!-- <TrainingPrograms /> -->
     <!-- <MainHero />
     <ProgramSection />
     <HeadCoach />

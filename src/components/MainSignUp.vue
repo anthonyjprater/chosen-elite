@@ -45,7 +45,7 @@ import { useField, useForm } from 'vee-validate';
     </section>
 </template>
    
-<style>
+<style scoped>
 section {
   display: flex;
   flex-direction: column;
@@ -68,6 +68,7 @@ form {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+  border-radius: 8px;
 }
 
 div.form-inputs {

@@ -87,7 +87,7 @@ li div {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    padding: 0 1rem;
+    padding: 0 0.25rem;
 }
 
 
@@ -95,7 +95,6 @@ li::marker {
     content: "🏀";
     font-size: 1rem;
     color: var(--green);
-    
 }
 
 </style>
