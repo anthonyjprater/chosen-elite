@@ -10,7 +10,7 @@ import signUpButton from '../components/buttons/signUpButton.vue';
 const items = ref([
     { title: 'Train Your Mind and Body for Basketball Success' },
     { title: 'Training Programs', description: 'Description 2' },
-    { title: 'About US', description: 'Description 3' }
+    { title: 'About Us', description: 'Description 3' }
     ]);
 
 const programOverviews = ref([
