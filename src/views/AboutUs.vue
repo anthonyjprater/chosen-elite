@@ -7,29 +7,65 @@ const items = ref([
     { title: 'Training Programs', description: 'Description 2' },
     { title: 'About Us', description: 'Description 3' }
     ])
+
+const image = ref("url('/ce_02.jpg')")
 </script>
 
 <template>
-    <HeroHeader :item = "items[2]" />
+    <HeroHeader :item = "items[2]" :backGroundImage = "image" />
     <section>
-        <h1></h1>
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <img src="" alt="">
+        <h2>Chosen Elite Basketball Academy</h2>
+        <img class="logo-image" src="elite-logo.svg" alt="">
+        <p>Chosen Elite Basketball Academy is a specialized basketball academy that helps player reach their maximum athletic potential. The academy employs highly qualified coaches and insrtuctors who provide personalized support to each participant, developing their skills and helping them achieve high results.</p>
+        <p>Chosen Elite Basketball Academy provides an intensive training program that includes not only on-court training, but also physical training, participation in competitions and tactics discussion sessions. It provides training opportunities for beginners as well as professional athletes looking to improve their level of play.</p>
+        <p>Chosen Elite Basketball Academy emphasizes the development of skills such as ball control, passing, shooting, defense, and the strategic elements of the game, such as reading the game and making decisions on the court. Participants recieve personalized guidance from coaches and assistance in setting and achieving their basketball goals.</p>
+        <p>Chosen Elite Basketball Academy also offers opportunities to socialize and collaborate with other players, which helps develop team spirit and improve social skills. The Academy strives to create an enjoyable and motivating atmosphere for all participants, where everyone can realize their potential and reach new heights in the game. </p>
+        <img src="vue.svg" alt="">
+        <h3>Our goals and mission</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Preparing the Chosen Elite Basketball Club</li>
+            <li>Rehabilitation of athletes and functional training on the basis of functional performance</li>
+            <li>Support of athletes in their amateur and professional careers</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nesciunt?</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit.</li>
         </ul>
     </section>
 </template>
 
 <style scoped>
+section {
+    background: rgba(47, 47, 47, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* justify-content: center; */
+    width: 100vw;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-image {
+    max-width: 50%;
+    order: 1;
+}
+
+h2 {
+    order: 2;
+}
+
+section :nth-child(1) { order: 2; }
+section :nth-child(2) { order: 1; }
+section :nth-child(3) { order: 3; }
+section :nth-child(4) { order: 4; }
+section :nth-child(5) { order: 5; }
+section :nth-child(6) { order: 7; }
+section :nth-child(7) { order: 6; }
+section :nth-child(8) { order: 8; }
+section :nth-child(9) { order: 9; }
 </style>

@@ -17,17 +17,22 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  backGroundImage: {
+    type: String,
+    default: "",
+  }
 });
 
 const title = ref(props.item.title);
 // const description = ref(props.item.description);
+const bgImage = ref(props.backGroundImage)
 
-
+console.log(bgImage)
 </script>
 
 <template>
   <div class="main-hero">
-    <MainHeader :isTransparent="transparent"/>
+    <MainHeader :isTransparent="transparent" />
     <h2 class="hero-headline">{{ title }}</h2>
     <button v-if="showButton" class="sign-up">Sign up for training</button>
   </div>
@@ -41,7 +46,8 @@ const title = ref(props.item.title);
   justify-content: center;
   gap: 2rem;
   width: 100vw;
-  background: center/ cover no-repeat url("/placeholder-bg.jpg");
+  background: center/ cover no-repeat v-bind('bgImage');
+  /* background-image: v-bind('bgImage'); */
   padding: 4rem 3rem;
   position: relative;
 }

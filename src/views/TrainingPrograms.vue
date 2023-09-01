@@ -7,6 +7,8 @@ import TrainingCoach from '../components/programs/TrainingCoach.vue';
 import TrainingDetails from '../components/programs/TrainingDetails.vue'
 import signUpButton from '../components/buttons/signUpButton.vue';
 
+const image = ref("url('/placeholder-bg.jpg')")
+
 const items = ref([
     { title: 'Train Your Mind and Body for Basketball Success' },
     { title: 'Training Programs', description: 'Description 2' },
@@ -96,7 +98,7 @@ const programDetails = ref([
 </script>
 
 <template>
-    <HeroHeader :item = "items[1]" />
+    <HeroHeader :item = "items[1]" :backGroundImage="image" />
     <section>
       <TrainingOverview :overview = "programOverviews" :summary = "coachSummary" />
       <TrainingCoach :summary = "coachSummary"/>
