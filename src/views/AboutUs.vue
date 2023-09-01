@@ -14,7 +14,7 @@ const image = ref("url('/ce_02.jpg')")
 <template>
     <HeroHeader :item = "items[2]" :backGroundImage = "image" />
     <section>
-        <h2>Chosen Elite Basketball Academy</h2>
+        <h2>Chosen Elite Basketball</h2>
         <img class="logo-image" src="elite-logo.svg" alt="">
         <p>Chosen Elite Basketball Academy is a specialized basketball academy that helps player reach their maximum athletic potential. The academy employs highly qualified coaches and insrtuctors who provide personalized support to each participant, developing their skills and helping them achieve high results.</p>
         <p>Chosen Elite Basketball Academy provides an intensive training program that includes not only on-court training, but also physical training, participation in competitions and tactics discussion sessions. It provides training opportunities for beginners as well as professional athletes looking to improve their level of play.</p>
@@ -36,36 +36,36 @@ const image = ref("url('/ce_02.jpg')")
 <style scoped>
 section {
     background: rgba(47, 47, 47, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    display: grid;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* align-items: baseline; */
     /* justify-content: center; */
     width: 100vw;
     padding: 3rem 1.5rem;
     gap: 1.5rem;
+    background: linear-gradient(0deg, rgba(47,47,47,.7), rgba(0,0,0,1));
+    text-align: left;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    background: linear-gradient(0deg, rgba(47,47,47,.7), rgba(0,0,0,1)33%);
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
 }
 
-.logo-image {
+/* .logo-image {
     max-width: 50%;
-    order: 1;
-}
+} */
 
 h2 {
-    order: 2;
+    text-wrap: balance;
 }
 
-section :nth-child(1) { order: 2; }
-section :nth-child(2) { order: 1; }
-section :nth-child(3) { order: 3; }
-section :nth-child(4) { order: 4; }
-section :nth-child(5) { order: 5; }
-section :nth-child(6) { order: 7; }
-section :nth-child(7) { order: 6; }
-section :nth-child(8) { order: 8; }
-section :nth-child(9) { order: 9; }
+section :nth-child(1) { order: -1; }
+section :nth-child(2) { order: -2 }
+section :nth-child(6) { order: 1; }
+
 </style>
