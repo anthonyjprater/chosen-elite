@@ -18,9 +18,9 @@ const image = ref("url('/ce_02.jpg')")
         <img class="logo-image" src="elite-logo.svg" alt="">
         <p>Chosen Elite Basketball Academy is a specialized basketball academy that helps player reach their maximum athletic potential. The academy employs highly qualified coaches and insrtuctors who provide personalized support to each participant, developing their skills and helping them achieve high results.</p>
         <p>Chosen Elite Basketball Academy provides an intensive training program that includes not only on-court training, but also physical training, participation in competitions and tactics discussion sessions. It provides training opportunities for beginners as well as professional athletes looking to improve their level of play.</p>
-        <p>Chosen Elite Basketball Academy emphasizes the development of skills such as ball control, passing, shooting, defense, and the strategic elements of the game, such as reading the game and making decisions on the court. Participants recieve personalized guidance from coaches and assistance in setting and achieving their basketball goals.</p>
+        <p class="accent">Chosen Elite Basketball Academy emphasizes the development of skills such as ball control, passing, shooting, defense, and the strategic elements of the game, such as reading the game and making decisions on the court. Participants recieve personalized guidance from coaches and assistance in setting and achieving their basketball goals.</p>
         <p>Chosen Elite Basketball Academy also offers opportunities to socialize and collaborate with other players, which helps develop team spirit and improve social skills. The Academy strives to create an enjoyable and motivating atmosphere for all participants, where everyone can realize their potential and reach new heights in the game. </p>
-        <img src="vue.svg" alt="">
+        <img src="coach.png" alt="">
         <h3>Our goals and mission</h3>
         <ul>
             <li>Preparing the Chosen Elite Basketball Club</li>
@@ -37,11 +37,11 @@ const image = ref("url('/ce_02.jpg')")
 section {
     background: rgba(47, 47, 47, 1);
     display: grid;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     /* flex-direction: column; */
-    /* align-items: baseline; */
-    /* justify-content: center; */
+    align-items: baseline;
+    justify-content: center;
     width: 100vw;
     padding: 3rem 1.5rem;
     gap: 1.5rem;
@@ -64,8 +64,28 @@ h2 {
     text-wrap: balance;
 }
 
+ul {
+    padding-left: 10px;
+}
+
 section :nth-child(1) { order: -1; }
 section :nth-child(2) { order: -2 }
 section :nth-child(6) { order: 1; }
+section p {
+    border-left: 3px solid var(--green);
+    padding-left: 10px;
+}
+
+@media(min-width:768px) {
+    section p {
+        border: none;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        align-self: center;
+    }
+}
 
 </style>
