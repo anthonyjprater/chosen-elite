@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 // import MainHeader from './components/headers/MainHeader.vue'
 import MainFooter from './components/footers/MainFooter.vue'
@@ -18,7 +19,8 @@ import AboutUs from './views/AboutUs.vue';
 <template>
   <!-- <MainHeader /> -->
   <main>
-    <AboutUs />
+    <RouterView />
+    <!-- <AboutUs /> -->
     <!-- <applyForm /> -->
     <!-- <TrainingPrograms /> -->
     <!-- <MainHero />
