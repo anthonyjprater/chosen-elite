@@ -68,6 +68,11 @@ div.form-inputs {
   border-radius: 8px;
 }
 
+input::placeholder {
+  color: rgba(55, 255, 55);
+  text-shadow: 1px 1px 0px white;
+}
+
 input:focus {
   background-color: rgba(55, 255, 55, 0.87);
 }
@@ -75,6 +80,7 @@ input:focus {
 div.form-inputs div {
   width: min(300px, 600px);
 }
+
 
 input {
   padding: 1rem;

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutUs from '../views/AboutUs.vue'
 import TrainingPrograms from '../views/TrainingPrograms.vue'
+import ApplyForm from '../views/ApplyForm.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,7 +13,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about/',
+      path: '/about',
       name: 'about-us',
       props: true,
       component: AboutUs,
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/training',
       name: 'training-programs',
       component: TrainingPrograms,
+    },
+    {
+      path: '/apply',
+      name: 'apply-form',
+      component: () => import('../views/ApplyForm.vue'),
     },
   ],
 })

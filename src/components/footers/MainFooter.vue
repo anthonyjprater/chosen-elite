@@ -21,9 +21,9 @@
                 <li class="has-sub-menu">
                   <button class="footer-nav-trigger">Programs</button>
                   <ul class="footer-sub-menu">
-                    <li><a href="#">Children</a></li>
-                    <li><a href="#">Amateurs</a></li>
-                    <li><a href="#">Professionals</a></li>
+                    <li><a href="/training/children">Children</a></li>
+                    <li><a href="/training/amateurs">Amateurs</a></li>
+                    <li><a href="/training/professionals">Professionals</a></li>
                     <li><a href="#">Apply</a></li>
                   </ul>
                 </li>

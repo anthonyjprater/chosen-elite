@@ -1,10 +1,29 @@
 <script setup>
+import { ref } from 'vue'
+
 const props = defineProps({
   isTransparent: {
     type: Boolean,
     default: true,
   },
 })
+
+const isHidden = ref(true);
+const isHiddenSub = ref(true);
+const hideClass = ref('hide');
+const hideSubClass = ref('hidden')
+
+const toggleHideClass = () => {
+  isHidden.value = !isHidden.value
+  // hideClass.value === 'hide' ? '' : 'hide';
+  console.log('hide')
+}
+
+const toggleHideSubClass = () => {
+  isHiddenSub.value = !isHiddenSub.value
+  // hideClass.value === 'hide' ? '' : 'hide';
+  console.log('hidden')
+}
 
 </script>
 
@@ -16,7 +35,7 @@ const props = defineProps({
         </a>
         <nav id="navigation" class="main-nav">
           <a href="#main" class="skip-link">Skip navigation</a>
-            <button class="menu-trigger">
+            <button class="menu-trigger" @click="toggleHideClass">
             <svg class="icon" viewBox="0 0 30 30">
             <path
                     d="M0 6h28v3h-28v-3zM0 14h28v3h-28v-3zM0 22h28v3h-28v-3z"
@@ -25,10 +44,10 @@ const props = defineProps({
             </svg>
             <span class="sr-only">Main menu</span>
             </button>
-            <ul :class="{ transparent: isTransparent }" class="hide">
+            <ul :class="[{ transparent: isTransparent }, { hide: isHidden }]">
                 <li class="has-sub-menu">
-                  <button class="sub-menu-trigger">Hustle Team</button>
-                  <ul class="sub-menu">
+                  <button class="sub-menu-trigger" @click="toggleHideSubClass">Hustle Team</button>
+                  <ul :class="[{ hidden: isHiddenSub }]" class="sub-menu">
                     <RouterLink :to="{ name: 'about-us'}">About Us</RouterLink>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Coaches</a></li>
@@ -36,8 +55,8 @@ const props = defineProps({
                   </ul>
                 </li>
                 <li class="has-sub-menu">
-                  <button class="sub-menu-trigger">Training Programs</button>
-                  <ul class="sub-menu">
+                  <button class="sub-menu-trigger" @click="toggleHideSubClass">Training Programs</button>
+                  <ul :class="[{ hidden: isHiddenSub }]" class="sub-menu">
                     <RouterLink :to="{ name: 'training-programs'}">Training</RouterLink>
                     <li><a href="#">Children</a></li>
                     <li><a href="#">Amateurs</a></li>
@@ -210,7 +229,7 @@ button:active {
   border-color: black;
 }
 .main-nav ul.hide,
-.main-nav ul ul.hide {
+.main-nav ul ul.hidden {
   display: none;
 }
 
