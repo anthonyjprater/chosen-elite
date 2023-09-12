@@ -20,7 +20,7 @@ const image = ref("url('placeholder-bg.jpg')")
 </script>
 
 <template>
-    <HeroHeader :item = "items[1]" :backGroundImage="image" />
+    <HeroHeader :item = "items[0]" :backGroundImage="image" />
     <ProgramSection />
     <HeadCoach />
     <MainCarousel />
