@@ -68,9 +68,15 @@ ul {
     padding-left: 10px;
 }
 
-section :nth-child(1) { order: -1; }
-section :nth-child(2) { order: -2 }
-section :nth-child(6) { order: 1; }
+section :nth-child(1) { order: -8; }
+section :nth-child(2) { order: -5; }
+section :nth-child(3) { order: -7; }
+section :nth-child(4) { order: -6; }
+section :nth-child(5) { order: -5; }
+section :nth-child(6) { order: -3; }
+section :nth-child(7) { order: -4; }
+section :nth-child(8) { order: -3; }
+section :nth-child(9) { order: -2; }
 section p {
     border-left: 3px solid var(--green);
     padding-left: 10px;
