@@ -36,7 +36,6 @@ const image = ref("url('/ce_02.jpg')")
 <style scoped>
 section {
     background: rgba(47, 47, 47, 1);
-    display: grid;
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -64,6 +63,11 @@ h2 {
     text-wrap: balance;
 }
 
+h3 {
+    width: 100%;
+    text-align: center;
+}
+
 ul {
     padding-left: 10px;
 }
@@ -73,7 +77,7 @@ section :nth-child(2) { order: -5; }
 section :nth-child(3) { order: -7; }
 section :nth-child(4) { order: -6; }
 section :nth-child(5) { order: -5; }
-section :nth-child(6) { order: -3; }
+section :nth-child(6) { order: -1; }
 section :nth-child(7) { order: -4; }
 section :nth-child(8) { order: -3; }
 section :nth-child(9) { order: -2; }
@@ -83,6 +87,11 @@ section p {
 }
 
 @media(min-width:768px) {
+
+    section {
+        padding: 3rem 7.5rem;
+    }
+
     section p {
         border: none;
         padding: 0;
