@@ -109,6 +109,19 @@ const programDetails = ref([
 
 <style scoped>
 
+section {
+    background: rgba(47, 47, 47, 1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    width: 100vw;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+    background: linear-gradient(0deg, rgba(47,47,47,.7), rgba(0,0,0,1));
+    text-align: left;
+}
+
 h2.hero-headline {
   font-size: 1.25rem;
   color: var(--white);
@@ -117,6 +130,12 @@ h2.hero-headline {
   line-height: 1.3;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   z-index: 2;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 3rem 7.5rem;
+  }
 }
 
 </style>

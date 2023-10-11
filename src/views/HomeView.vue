@@ -30,5 +30,10 @@ const image = ref("url('placeholder-bg.jpg')")
 </template>
 
 <style scoped>
+@media (min-width: 768px) {
 
+    section {
+        padding: 3rem 7.5rem;
+    }
+}
 </style>

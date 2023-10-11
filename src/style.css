@@ -127,7 +127,7 @@ button.carousel__pagination-button:hover::after, .carousel__pagination-button--a
   }
 
   div.carousel__viewport {
-    width: 90%;
+    width: 100%;
   }
 
 }
