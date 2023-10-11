@@ -89,9 +89,9 @@ section p {
     }
 
     h2 {
-        font-size: 2rem;
-        align-self: center;
+        font-size: 1.5rem;
     }
+
 }
 
 </style>

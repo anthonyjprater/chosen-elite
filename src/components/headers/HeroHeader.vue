@@ -114,5 +114,9 @@ button.sign-up:hover {
     padding: 1em 1.5em;
   }
 
+  h2.hero-headline {
+    font-size: 2.5rem;
+  }
+
 }
 </style>
