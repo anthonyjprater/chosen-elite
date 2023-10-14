@@ -31,7 +31,7 @@ const router = createRouter({
     {
       path: '/references',
       name: 'references',
-      component: () => import('@/views/ReferenceList.vue'),
+      component: () => import('@/views/ReferencesList.vue'),
     },
     {
       path: '/training_grounds',
