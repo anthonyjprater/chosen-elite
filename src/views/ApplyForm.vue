@@ -128,6 +128,10 @@ p.privacy-message {
 }
 
 @media (min-width: 768px) {
+
+  section {
+        padding: 3rem 7.5rem;
+  }
   div.form-inputs {
     flex-direction: row;
   }

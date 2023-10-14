@@ -27,10 +27,10 @@ const locations = ref([
       <img :src="location.image" alt="" width="280" height="160">
       <div>
         <h2>{{ location.heading }}</h2>
-            <h3>Description</h3>
-            <p>{{ location.text1 }}</p>
-            <h3>Address</h3>
-            <address>{{ location.text2 }}</address>  
+        <h3>Description</h3>
+        <p>{{ location.text1 }}</p>
+        <h3>Address</h3>
+        <address>{{ location.text2 }}</address>  
       </div>
     </article>
   </section>
@@ -60,7 +60,14 @@ section {
 
 section article:not(:last-child) {
   border-bottom: 2px solid var(--green);
-  padding: 1rem;
+  padding:0 0 1rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(0deg, rgba(47,47,47,.7), rgba(0,0,0,1)33%);
+  box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
 }
 
 img,h2,h3,p {
@@ -78,8 +85,39 @@ h3 {
 }
 
 @media(min-width: 768px) {
+
+  section {
+        padding: 3rem 7.5rem;
+  }
+
+  section article:not(:last-child) {
+  border-bottom: 2px solid var(--green);
+  padding:0 0 2rem 0;
+}
+
   h1 {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  article > * {
+    width: 50%;
+  }
+  
+  article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0 0 1rem 0;
   }
 }
 
