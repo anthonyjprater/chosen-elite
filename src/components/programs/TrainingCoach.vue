@@ -14,7 +14,7 @@ const summary = ref(props.summary)
 <!--Program Coach Article-->
 <article>
             <h2>{{ summary[0].heading }}</h2>
-            <img src="coach.png" alt="" />
+            <img src="@/assets/coach.png" alt="" width="240px" height="320px" />
             <p>{{ summary[0].summary }}</p>
             <ul>
                 <li>{{ summary[0].info[1].content }}</li>
